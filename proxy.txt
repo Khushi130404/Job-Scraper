@@ -1,0 +1,10 @@
+45.127.248.127:5128:bmuackph:x394fpyf4ns2
+207.244.217.165:6712:bmuackph:x394fpyf4ns2
+134.73.69.7:5997:bmuackph:x394fpyf4ns2
+64.64.118.149:6732:bmuackph:x394fpyf4ns2
+157.52.253.244:6204:bmuackph:x394fpyf4ns2
+167.160.180.203:6754:bmuackph:x394fpyf4ns2
+166.88.58.10:5735:bmuackph:x394fpyf4ns2
+173.0.9.70:5653:bmuackph:x394fpyf4ns2
+204.44.69.89:6342:bmuackph:x394fpyf4ns2
+173.0.9.209:5792:bmuackph:x394fpyf4ns2
