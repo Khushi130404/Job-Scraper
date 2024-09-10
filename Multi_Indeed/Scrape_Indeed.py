@@ -10,76 +10,73 @@ import json
 import pandas as pd
 
 # Initialize Chrome options
-# chrome_options = Options()
-# chrome_options.add_argument("--headless")  # Uncomment to run in headless mode
+chrome_options = Options()
+# Uncomment if running in headless mode
+# chrome_options.add_argument("--headless")
 
 # Initialize the Chrome driver
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-query = "it jobs"
-base_url = f"https://www.indeed.com/q-{query.replace(' ', '-')}"
+query = "it-jobs"
+base_url = f"https://www.naukri.com/{query}?src=gnbjobs_homepage_srch"
 driver.get(base_url)
 
 # Lists to store data
 all_data = []
 
 page = 1
-while True:
+max_pages = 5  # Limit to 5 pages
+while page <= max_pages:
     time.sleep(5)  # Wait for the page to load
 
     # Get the page source and parse it with BeautifulSoup
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    # Find all job titles
-    titles = soup.select("h2.jobTitle")
-    titles_list = [title.getText().strip() for title in titles]
+    # Find all card links
+    card_links = soup.select("div.sjw__tuple a")  # Update selector as needed
 
-    # Find company names
-    companies = soup.select("span.companyName")
-    company_names_list = [company.getText().strip() for company in companies]
+    for card_link in card_links:
+        try:
+            # Click on the card link
+            driver.execute_script("arguments[0].click();", card_link)
+            time.sleep(5)  # Wait for the details to load
 
-    # Find ratings
-    ratings = soup.select("span.ratingNumber")
-    ratings_list = [rating.getText().strip() if rating else "No Rating" for rating in ratings]
+            # Get the new page source and parse it with BeautifulSoup
+            html = driver.page_source
+            soup = BeautifulSoup(html, 'html.parser')
 
-    # Find experience requirements (not always available)
-    experiences = soup.select("div.job-snippet")
-    experience_list = [exp.getText().strip() if exp else "Not Disclosed" for exp in experiences]
+            # Extract job details
+            title = soup.select_one("h1.job-title").get_text(strip=True)  # Update selector as needed
+            company = soup.select_one("span.company-name").get_text(strip=True)  # Update selector as needed
+            rating = soup.select_one("span.rating").get_text(strip=True) if soup.select_one("span.rating") else "No Ratings Available"
+            experience = soup.select_one("span.experience").get_text(strip=True) if soup.select_one("span.experience") else "Not Disclosed"
+            salary = soup.select_one("span.salary").get_text(strip=True) if soup.select_one("span.salary") else "Not Disclosed"
+            location = soup.select_one("span.location").get_text(strip=True) if soup.select_one("span.location") else "No Location Available"
+            description = soup.select_one("div.job-description").get_text(strip=True)  # Update selector as needed
+            updated = soup.select_one("span.updated-time").get_text(strip=True) if soup.select_one("span.updated-time") else "No Data Available"
 
-    # Find salaries (may not always be available)
-    salaries = soup.select("span.salary-snippet")
-    salaries_list = [salary.getText().strip() if salary else "Not Disclosed" for salary in salaries]
+            # Store the job details
+            job_data = {
+                "Job Title": title,
+                "Company Name": company,
+                "Ratings": rating,
+                "Experience Required": experience,
+                "Salary": salary,
+                "Location": location,
+                "Job Description": description,
+                "Updated": updated
+            }
+            all_data.append(job_data)
 
-    # Find locations
-    locations = soup.select("div.companyLocation")
-    locations_list = [location.getText().strip() for location in locations]
+            # Go back to the main page
+            driver.back()
+            time.sleep(5)  # Wait for the main page to reload
 
-    # Find job descriptions (may need adjustment based on availability)
-    descriptions = soup.select("div.job-snippet")
-    descriptions_list = [desc.getText().strip() for desc in descriptions]
-
-    # Find posting dates
-    posting_dates = soup.select("span.date")
-    posting_dates_list = [date.getText().strip() for date in posting_dates]
-
-    # Collect data for the current page
-    page_data = []
-    for title, company, rating, experience, salary, location, desc, posting_date in zip(
-            titles_list, company_names_list, ratings_list, experience_list, salaries_list, locations_list,
-            descriptions_list, posting_dates_list):
-        job_data = {
-            "Job Title": title,
-            "Company Name": company,
-            "Ratings": rating,
-            "Experience Required": experience,
-            "Salary": salary,
-            "Location": location,
-            "Job Description": desc,
-            "Posting Date": posting_date
-        }
-        page_data.append(job_data)
-        all_data.append(job_data)
+        except Exception as e:
+            print(f"Error processing card: {e}")
+            driver.back()
+            time.sleep(5)
 
     print(f"Page {page} data collected")
 
@@ -89,7 +86,7 @@ while True:
         if next_link.is_displayed() and next_link.is_enabled():
             driver.execute_script("arguments[0].click();", next_link)
             page += 1
-            time.sleep(3)
+            time.sleep(5)
         else:
             print("No 'Next' link found or link not clickable. Ending pagination.")
             break
@@ -101,20 +98,20 @@ while True:
 driver.quit()
 
 # Save data to CSV
-csv_file = "indeed_job_data.csv"
-keys = all_data[0].keys()
+csv_file = "job_data.csv"
+keys = all_data[0].keys() if all_data else []
 with open(csv_file, "w", newline="", encoding="utf-8") as output_file:
     dict_writer = csv.DictWriter(output_file, fieldnames=keys)
     dict_writer.writeheader()
     dict_writer.writerows(all_data)
 
 # Save data to Excel
-excel_file = "indeed_job_data.xlsx"
+excel_file = "job_data.xlsx"
 df = pd.DataFrame(all_data)
 df.to_excel(excel_file, index=False)
 
 # Save data to JSON
-json_file = "indeed_job_data.json"
+json_file = "job_data.json"
 with open(json_file, "w", encoding="utf-8") as json_output_file:
     json.dump(all_data, json_output_file, ensure_ascii=False, indent=4)
 
