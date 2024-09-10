@@ -38,8 +38,16 @@ while page <= max_pages:
 
     for job_card in job_cards:
         try:
+            # Extract the link from the job card
+            job_link = job_card.get('href')
+
+            # Construct the full URL (ensure it's an absolute URL)
+            if job_link.startswith("/"):
+                job_link = "https://www.indeed.com" + job_link
+
             # Click on the job card link
-            driver.execute_script("arguments[0].click();", job_card)
+            # driver.execute_script("arguments[0].click();", job_card)
+            driver.get(job_link)
             time.sleep(5)  # Wait for the job details to load
 
             # Get the new page source and parse it with BeautifulSoup
@@ -47,20 +55,27 @@ while page <= max_pages:
             soup = BeautifulSoup(html, 'html.parser')
 
             # Extract job details
-            title = soup.select_one("h1.jobsearch-JobInfoHeader-title").get_text(strip=True)  # Update selector as needed
-            company = soup.select_one("div.jobsearch-JobInfoHeader-companyNameSimple").get_text(strip=True)  # Update selector as needed
-            experience = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
+            title_element = soup.select_one("h1.jobsearch-JobInfoHeader-title")
+            title = title_element.get_text(strip=True) if title_element else "No Title Available"
 
-            # If the 'ul' is found, extract the text from all 'li' elements
-            if experience:
-                experience = " | ".join([li.get_text(strip=True) for li in experience.find_all('li')])
+            company_element = soup.select_one("div.jobsearch-JobInfoHeader-companyNameSimple")
+            company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
+
+            experience_element = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
+            if experience_element:
+                experience = " | ".join([li.get_text(strip=True) for li in experience_element.find_all('li')])
             else:
                 experience = "Not Disclosed"
-            salary = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")  # Salary might not be available
-            salary = salary.get_text(strip=True) if salary else "Not Disclosed"
-            location = soup.select_one("div.js-match-insights-provider-tvvxwd")  # Location might not be available
-            location = location.get_text(strip=True) if location else "No Location Available"
-            description = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(9)").get_text(strip=True)  # Update selector as needed
+
+            salary_element = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")
+            salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
+
+            location_element = soup.select_one("div.js-match-insights-provider-tvvxwd")
+            location = location_element.get_text(strip=True) if location_element else "No Location Available"
+
+            description_element = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(9)")
+            description = description_element.get_text(
+                strip=True) if description_element else "No Description Available"
 
             # Store the job details
             job_data = {
