@@ -18,7 +18,7 @@ chrome_options = Options()
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 query = "it-jobs"
-base_url = f"https://www.naukri.com/{query}?src=gnbjobs_homepage_srch"
+base_url = f"https://www.indeed.com/q-{query}-jobs.html"
 driver.get(base_url)
 
 # Lists to store data
@@ -33,28 +33,33 @@ while page <= max_pages:
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    # Find all card links
-    card_links = soup.select("div.sjw__tuple a")  # Update selector as needed
+    # Find all job cards
+    job_cards = soup.select("div.job_seen_beacon")  # Update selector as needed
 
-    for card_link in card_links:
+    for job_card in job_cards:
         try:
-            # Click on the card link
-            driver.execute_script("arguments[0].click();", card_link)
-            time.sleep(5)  # Wait for the details to load
+            # Click on the job card link
+            driver.execute_script("arguments[0].click();", job_card)
+            time.sleep(5)  # Wait for the job details to load
 
             # Get the new page source and parse it with BeautifulSoup
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
 
             # Extract job details
-            title = soup.select_one("h1.job-title").get_text(strip=True)  # Update selector as needed
-            company = soup.select_one("span.company-name").get_text(strip=True)  # Update selector as needed
-            rating = soup.select_one("span.rating").get_text(strip=True) if soup.select_one("span.rating") else "No Ratings Available"
-            experience = soup.select_one("span.experience").get_text(strip=True) if soup.select_one("span.experience") else "Not Disclosed"
-            salary = soup.select_one("span.salary").get_text(strip=True) if soup.select_one("span.salary") else "Not Disclosed"
-            location = soup.select_one("span.location").get_text(strip=True) if soup.select_one("span.location") else "No Location Available"
-            description = soup.select_one("div.job-description").get_text(strip=True)  # Update selector as needed
-            updated = soup.select_one("span.updated-time").get_text(strip=True) if soup.select_one("span.updated-time") else "No Data Available"
+            title = soup.select_one("h1.jobsearch-JobInfoHeader-title").get_text(strip=True)  # Update selector as needed
+            company = soup.select_one("div.jobsearch-CompanyInfoWithoutHeaderImage").get_text(strip=True)  # Update selector as needed
+            rating = soup.select_one("span.jobsearch-CompanyRating")  # Rating might not be present on every job
+            rating = rating.get_text(strip=True) if rating else "No Ratings Available"
+            experience = soup.select_one("div.jobsearch-JobMetadataHeader-item")  # Experience might not be available
+            experience = experience.get_text(strip=True) if experience else "Not Disclosed"
+            salary = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")  # Salary might not be available
+            salary = salary.get_text(strip=True) if salary else "Not Disclosed"
+            location = soup.select_one("div.jobsearch-JobMetadataHeader-item.location")  # Location might not be available
+            location = location.get_text(strip=True) if location else "No Location Available"
+            description = soup.select_one("div.jobsearch-jobDescriptionText").get_text(strip=True)  # Update selector as needed
+            updated = soup.select_one("div.jobsearch-JobMetadataFooter span")  # Last updated time might not be available
+            updated = updated.get_text(strip=True) if updated else "No Data Available"
 
             # Store the job details
             job_data = {
@@ -74,7 +79,7 @@ while page <= max_pages:
             time.sleep(5)  # Wait for the main page to reload
 
         except Exception as e:
-            print(f"Error processing card: {e}")
+            print(f"Error processing job card: {e}")
             driver.back()
             time.sleep(5)
 
