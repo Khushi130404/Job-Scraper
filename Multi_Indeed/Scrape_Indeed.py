@@ -34,12 +34,20 @@ while page <= max_pages:
     soup = BeautifulSoup(html, 'html.parser')
 
     # Find all job cards
-    job_cards = soup.select("div.job_seen_beacon")  # Update selector as needed
+    job_cards = soup.select("a.jcs-JobTitle")  # Update selector as needed
 
     for job_card in job_cards:
         try:
+            # Extract the link from the job card
+            job_link = job_card.get('href')
+
+            # Construct the full URL (ensure it's an absolute URL)
+            if job_link.startswith("/"):
+                job_link = "https://www.indeed.com" + job_link
+
             # Click on the job card link
-            driver.execute_script("arguments[0].click();", job_card)
+            # driver.execute_script("arguments[0].click();", job_card)
+            driver.get(job_link)
             time.sleep(5)  # Wait for the job details to load
 
             # Get the new page source and parse it with BeautifulSoup
@@ -47,30 +55,36 @@ while page <= max_pages:
             soup = BeautifulSoup(html, 'html.parser')
 
             # Extract job details
-            title = soup.select_one("h1.jobsearch-JobInfoHeader-title").get_text(strip=True)  # Update selector as needed
-            company = soup.select_one("div.jobsearch-CompanyInfoWithoutHeaderImage").get_text(strip=True)  # Update selector as needed
-            rating = soup.select_one("span.jobsearch-CompanyRating")  # Rating might not be present on every job
-            rating = rating.get_text(strip=True) if rating else "No Ratings Available"
-            experience = soup.select_one("div.jobsearch-JobMetadataHeader-item")  # Experience might not be available
-            experience = experience.get_text(strip=True) if experience else "Not Disclosed"
-            salary = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")  # Salary might not be available
-            salary = salary.get_text(strip=True) if salary else "Not Disclosed"
-            location = soup.select_one("div.jobsearch-JobMetadataHeader-item.location")  # Location might not be available
-            location = location.get_text(strip=True) if location else "No Location Available"
-            description = soup.select_one("div.jobsearch-jobDescriptionText").get_text(strip=True)  # Update selector as needed
-            updated = soup.select_one("div.jobsearch-JobMetadataFooter span")  # Last updated time might not be available
-            updated = updated.get_text(strip=True) if updated else "No Data Available"
+            title_element = soup.select_one("h1.jobsearch-JobInfoHeader-title")
+            title = title_element.get_text(strip=True) if title_element else "No Title Available"
+
+            company_element = soup.select_one("div.jobsearch-JobInfoHeader-companyNameSimple")
+            company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
+
+            experience_element = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
+            if experience_element:
+                experience = " | ".join([li.get_text(strip=True) for li in experience_element.find_all('li')])
+            else:
+                experience = "Not Disclosed"
+
+            salary_element = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")
+            salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
+
+            location_element = soup.select_one("div.js-match-insights-provider-tvvxwd")
+            location = location_element.get_text(strip=True) if location_element else "No Location Available"
+
+            description_element = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(9)")
+            description = description_element.get_text(
+                strip=True) if description_element else "No Description Available"
 
             # Store the job details
             job_data = {
                 "Job Title": title,
                 "Company Name": company,
-                "Ratings": rating,
                 "Experience Required": experience,
                 "Salary": salary,
                 "Location": location,
                 "Job Description": description,
-                "Updated": updated
             }
             all_data.append(job_data)
 
