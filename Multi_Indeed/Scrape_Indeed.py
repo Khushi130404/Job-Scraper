@@ -34,7 +34,7 @@ while page <= max_pages:
     soup = BeautifulSoup(html, 'html.parser')
 
     # Find all job cards
-    job_cards = soup.select("div.job_seen_beacon")  # Update selector as needed
+    job_cards = soup.select("a.jcs-JobTitle")  # Update selector as needed
 
     for job_card in job_cards:
         try:
@@ -48,29 +48,28 @@ while page <= max_pages:
 
             # Extract job details
             title = soup.select_one("h1.jobsearch-JobInfoHeader-title").get_text(strip=True)  # Update selector as needed
-            company = soup.select_one("div.jobsearch-CompanyInfoWithoutHeaderImage").get_text(strip=True)  # Update selector as needed
-            rating = soup.select_one("span.jobsearch-CompanyRating")  # Rating might not be present on every job
-            rating = rating.get_text(strip=True) if rating else "No Ratings Available"
-            experience = soup.select_one("div.jobsearch-JobMetadataHeader-item")  # Experience might not be available
-            experience = experience.get_text(strip=True) if experience else "Not Disclosed"
+            company = soup.select_one("div.jobsearch-JobInfoHeader-companyNameSimple").get_text(strip=True)  # Update selector as needed
+            experience = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
+
+            # If the 'ul' is found, extract the text from all 'li' elements
+            if experience:
+                experience = " | ".join([li.get_text(strip=True) for li in experience.find_all('li')])
+            else:
+                experience = "Not Disclosed"
             salary = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")  # Salary might not be available
             salary = salary.get_text(strip=True) if salary else "Not Disclosed"
-            location = soup.select_one("div.jobsearch-JobMetadataHeader-item.location")  # Location might not be available
+            location = soup.select_one("div.js-match-insights-provider-tvvxwd")  # Location might not be available
             location = location.get_text(strip=True) if location else "No Location Available"
-            description = soup.select_one("div.jobsearch-jobDescriptionText").get_text(strip=True)  # Update selector as needed
-            updated = soup.select_one("div.jobsearch-JobMetadataFooter span")  # Last updated time might not be available
-            updated = updated.get_text(strip=True) if updated else "No Data Available"
+            description = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(9)").get_text(strip=True)  # Update selector as needed
 
             # Store the job details
             job_data = {
                 "Job Title": title,
                 "Company Name": company,
-                "Ratings": rating,
                 "Experience Required": experience,
                 "Salary": salary,
                 "Location": location,
                 "Job Description": description,
-                "Updated": updated
             }
             all_data.append(job_data)
 
