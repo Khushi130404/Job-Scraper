@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import time
@@ -54,18 +56,21 @@ while page_counter < max_pages:
     experience_list = [exp.getText().strip() if exp else "Experience details not available" for exp in soup.select("span.rad-filters-vertical__job-card-details-type")] or ["N/A"] * len(titles_list)
 
     # Debug print statements
+    print(f"Page {page_counter + 1} URL: {driver.current_url}")
     print(f"Titles: {titles_list}")
     print(f"Locations: {locations_list}")
     print(f"Descriptions: {job_descriptions_list}")
     print(f"Experiences: {experience_list}")
 
     # Collect data for the current page
-    for title, location, desc, experience in zip(titles_list, locations_list, job_descriptions_list, experience_list):
+    for index, (title, location, desc, experience) in enumerate(zip(titles_list, locations_list, job_descriptions_list, experience_list), start=1):
         job_data = {
             "Job Title": title,
             "Location": location,
             "Job Description": desc,
-            "Experience Required": experience
+            "Experience Required": experience,
+            "Page": page_counter + 1,
+            "Index": index
         }
         all_data.append(job_data)
 
@@ -73,14 +78,12 @@ while page_counter < max_pages:
 
     # Find and click the "Next" link
     try:
-        next_link = driver.find_element(By.CSS_SELECTOR, "button.rad-filters-vertical__job-card-toggle")  # Update this selector
-        if next_link.is_displayed() and next_link.is_enabled():
-            driver.execute_script("arguments[0].click();", next_link)
-            page_counter += 1
-            time.sleep(3)
-        else:
-            print("No 'Next' link found or link not clickable. Ending pagination.")
-            break
+        next_link = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "button.rad-pagination__page-number:not(.rad-pagination__page-number--selected)"))
+        )
+        driver.execute_script("arguments[0].click();", next_link)
+        page_counter += 1
+        time.sleep(3)
     except Exception as e:
         print(f"Error during pagination: {e}")
         break
