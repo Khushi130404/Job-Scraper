@@ -101,7 +101,8 @@ while page <= max_pages:
 
     # Find and click the "Next" link
     try:
-        next_link = driver.find_element(By.CSS_SELECTOR, "a[aria-label='Next']")
+        next_link = driver.find_element(By.CSS_SELECTOR, "a.css-163rxa6")
+        driver.execute_script("arguments[0].click();", next_link)
         if next_link.is_displayed() and next_link.is_enabled():
             driver.execute_script("arguments[0].click();", next_link)
             page += 1
