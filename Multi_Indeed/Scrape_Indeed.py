@@ -118,10 +118,17 @@ while page <= max_pages:
     #     break
 
     try:
-        # Re-locate the next link just before clicking it to avoid stale reference
-        next_link = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "a.css-163rxa6"))
-        )
+        # For the 1st page, use the numbered pagination link (e.g., "2")
+        if page == 1:
+            next_link = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "a.css-163rxa6"))
+            )
+        else:
+            # From the 2nd page onwards, use the "Next page" link
+            next_link = WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "a.css-1m2y1qu"))
+            )
+
         driver.execute_script("arguments[0].click();", next_link)
         page += 1
         time.sleep(5)
