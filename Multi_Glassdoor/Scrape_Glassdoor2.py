@@ -50,12 +50,14 @@ def scrape_page():
     job_cards = soup.select("a.JobCard_trackingLink_GrRYn")  # Update selector as needed
     for job_card in job_cards:
         try:
-            job_link = job_card.get('href')
-            if job_link.startswith("/"):
-                job_link = "https://www.glassdoor.co.in" + job_link
-            driver.get(job_link)
-            time.sleep(5)
+            driver.execute_script("arguments[0].scrollIntoView(true);", job_card)
 
+            # Open job card in a new tab
+            job_card.click()
+            time.sleep(5)  # Wait for the new page to load
+
+            # Switch to the new tab
+            driver.switch_to.window(driver.window_handles[-1])
             # Get the new page source and parse it
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
@@ -72,9 +74,6 @@ def scrape_page():
             salary_element = soup.select_one("div.JobDetails_jobDescription_uW_fK p:nth-of-type(4)")
             salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
 
-            # experience_element = soup.select_one("div.JobDetails_jobDescription_uW_fK ul:nth-of-type(2)")
-            # experience = experience_element.get_text(strip=True) if experience_element else "No Description Available"
-
             experience_list = soup.select_one("div.JobDetails_jobDescription_uW_fK ul:nth-of-type(2)")
             if experience_list:
                 experience = " | ".join([li.get_text(strip=True) for li in experience_list.find_all('li')])
@@ -89,9 +88,6 @@ def scrape_page():
 
             rating_element = soup.select_one("div.Rating_Headline_sectionRatingScoreLeft_di1of")
             rating = rating_element.get_text(strip=True) if rating_element else "No Rating"
-
-            # description_element = soup.select_one("div.jobDescriptionContent")
-            # description = description_element.get_text(strip=True) if description_element else "No Description Available"
 
             job_data = {
                 "Job Title": title,
@@ -111,12 +107,18 @@ def scrape_page():
             driver.back()
             time.sleep(5)
 
-# Scrape the current page and continue clicking 'Load More'
+# Scrape the current page
 scrape_page()
 print("Initial page data collected")
 
-while click_load_more():  # Click the button and scrape more jobs until no button
+# Limit the number of "Load More" clicks
+max_clicks = 5
+click_count = 0
+
+# Click 'Load More' and scrape additional pages, up to the max_clicks limit
+while click_count < max_clicks and click_load_more():
     scrape_page()
+    click_count += 1
 
 # Close the driver
 driver.quit()
