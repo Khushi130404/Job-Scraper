@@ -23,23 +23,25 @@ query = "it-jobs"
 base_url = f"https://www.glassdoor.co.in/Job/{query}-jobs-SRCH_KO0,8.htm"
 driver.get(base_url)
 
-# Lists to store data and pagination links
+# Lists to store data
 all_data = []
-pagination_links = []
 
-# Step 1: Scrape pagination links (2, 3, 4, 5)
-try:
-    # Wait for the pagination elements to load and collect their URLs
-    pagination_elements = WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "li.page"))
-    )
-    for elem in pagination_elements:
-        link = elem.find_element(By.TAG_NAME, 'a')
-        pagination_links.append(link.get_attribute('href'))
-except Exception as e:
-    print(f"Error getting pagination links: {e}")
+# Function to click the "Load More" button if available
+def click_load_more():
+    try:
+        load_more_button = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "button[data-test='load-more-jobs']"))
+        )
+        if load_more_button:
+            load_more_button.click()
+            time.sleep(5)  # Adjust as needed
+            print("Clicked 'Load More' button")
+            return True
+    except Exception as e:
+        print(f"No 'Load More' button found: {e}")
+    return False
 
-# Step 2: Scrape the data from the current page
+# Step 1: Scrape the data from the current page
 def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
@@ -69,7 +71,7 @@ def scrape_page():
             salary_element = soup.select_one("span.css-56kyx5 span[data-test='detailSalary']")
             salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
 
-            description_element = soup.select_one("div.jobDescriptionContent desc")
+            description_element = soup.select_one("div.jobDescriptionContent")
             description = description_element.get_text(strip=True) if description_element else "No Description Available"
 
             job_data = {
@@ -88,19 +90,12 @@ def scrape_page():
             driver.back()
             time.sleep(5)
 
-# Scrape the current (first) page
+# Scrape the current page and continue clicking 'Load More'
 scrape_page()
-print("Page 1 data collected")
+print("Initial page data collected")
 
-# Step 3: Iterate through pagination links and scrape subsequent pages
-for i, page_url in enumerate(pagination_links):
-    try:
-        driver.get(page_url)
-        time.sleep(5)
-        scrape_page()
-        print(f"Page {i + 2} data collected")  # Because page 1 is already scraped
-    except Exception as e:
-        print(f"Error scraping page {i + 2}: {e}")
+while click_load_more():  # Click the button and scrape more jobs until no button
+    scrape_page()
 
 # Close the driver
 driver.quit()
