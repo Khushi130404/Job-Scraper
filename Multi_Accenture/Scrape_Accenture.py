@@ -68,9 +68,7 @@ while page_counter < max_pages:
             "Job Title": title,
             "Location": location,
             "Job Description": desc,
-            "Experience Required": experience,
-            "Page": page_counter + 1,
-            "Index": index
+            "Experience Required": experience
         }
         all_data.append(job_data)
 

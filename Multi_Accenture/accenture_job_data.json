@@ -3,480 +3,360 @@
         "Job Title": "Workday Certified Integrations Lead- Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 1
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Technical Manager - Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Manager",
-        "Experience Required": "Senior Level",
-        "Page": 1,
-        "Index": 2
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Workday Certified Integration Developer Consultant - Education/Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 3
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Data Consultant",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 4
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Financials FDM Lead – Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 5
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Financials R2R Consultant – Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 6
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Prism Lead - Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 7
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Financials Adaptive Consultant – Education & Govt",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 8
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Student Records/Curriculum/Advising Lead - Higher Education",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 9
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "^Full Stack JAVA Developer - 5467547",
         "Location": "Florham Park, NJ",
         "Job Description": "Software Development Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 10
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "^ETL Database Engineer  5411332",
         "Location": "Bloomington, IL",
         "Job Description": "Data Eng, Mgmt & Governance Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 1,
-        "Index": 11
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Consulting Summer Analyst - NAELFY25",
         "Location": "Various locations",
         "Job Description": "Mgmt Consulting Analyst",
-        "Experience Required": "Early Career",
-        "Page": 1,
-        "Index": 12
+        "Experience Required": "Early Career"
     },
     {
         "Job Title": "Technology Summer Analyst - NAELFY25",
         "Location": "Various locations",
         "Job Description": "Business Architecture Analyst",
-        "Experience Required": "Early Career",
-        "Page": 2,
-        "Index": 1
+        "Experience Required": "Early Career"
     },
     {
         "Job Title": "Oracle Utilities Consultant - Technical Designer",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 2
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Execution Engineer",
         "Location": "Various locations",
         "Job Description": "Data Eng, Mgmt & Governance Associate",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 3
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Splunk Application Developer",
         "Location": "Irving, TX",
         "Job Description": "Advanced App/Cloud Support & Engineering Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 4
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Systems Engineering- 5444434",
         "Location": "Florham Park, NJ",
         "Job Description": "Infra Managed Service Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 5
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Ansible Application Developer/Solution Engineer- 5444417",
         "Location": "Dallas, TX",
         "Job Description": "Advanced App/Cloud Support & Engineering Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 6
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Oracle GenAI Senior Manager",
         "Location": "Various locations",
         "Job Description": "Business Architecture Senior Manager",
-        "Experience Required": "Senior Level",
-        "Page": 2,
-        "Index": 7
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Oracle Platform Security Manager",
         "Location": "Various locations",
         "Job Description": "Security Consulting Senior Manager",
-        "Experience Required": "Senior Level",
-        "Page": 2,
-        "Index": 8
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Oracle SQL/ PLSQL Lead Developer - 5384983",
         "Location": "Various locations",
         "Job Description": "Database Administration Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 9
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "SAP JVA/PRA Lead",
         "Location": "Various locations",
         "Job Description": "Technology Consulting Manager",
-        "Experience Required": "Senior Level",
-        "Page": 2,
-        "Index": 10
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "SAP ABAP Cloud for S/4HANA Developer",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 11
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "SAP BTP Consultant",
         "Location": "Various locations",
         "Job Description": "Technology Consulting Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 2,
-        "Index": 12
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Integrations Lead- Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 1
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Technical Manager - Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Manager",
-        "Experience Required": "Senior Level",
-        "Page": 3,
-        "Index": 2
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Workday Certified Integration Developer Consultant - Education/Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 3
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Data Consultant",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 4
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Financials FDM Lead – Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 5
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Financials R2R Consultant – Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 6
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Prism Lead - Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 7
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Financials Adaptive Consultant – Education & Govt",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 8
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Student Records/Curriculum/Advising Lead - Higher Education",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 9
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "^Full Stack JAVA Developer - 5467547",
         "Location": "Florham Park, NJ",
         "Job Description": "Software Development Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 10
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "^ETL Database Engineer  5411332",
         "Location": "Bloomington, IL",
         "Job Description": "Data Eng, Mgmt & Governance Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 3,
-        "Index": 11
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Consulting Summer Analyst - NAELFY25",
         "Location": "Various locations",
         "Job Description": "Mgmt Consulting Analyst",
-        "Experience Required": "Early Career",
-        "Page": 3,
-        "Index": 12
+        "Experience Required": "Early Career"
     },
     {
         "Job Title": "Technology Summer Analyst - NAELFY25",
         "Location": "Various locations",
         "Job Description": "Business Architecture Analyst",
-        "Experience Required": "Early Career",
-        "Page": 4,
-        "Index": 1
+        "Experience Required": "Early Career"
     },
     {
         "Job Title": "Oracle Utilities Consultant - Technical Designer",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 2
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Execution Engineer",
         "Location": "Various locations",
         "Job Description": "Data Eng, Mgmt & Governance Associate",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 3
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Splunk Application Developer",
         "Location": "Irving, TX",
         "Job Description": "Advanced App/Cloud Support & Engineering Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 4
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Systems Engineering- 5444434",
         "Location": "Florham Park, NJ",
         "Job Description": "Infra Managed Service Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 5
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Ansible Application Developer/Solution Engineer- 5444417",
         "Location": "Dallas, TX",
         "Job Description": "Advanced App/Cloud Support & Engineering Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 6
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Oracle GenAI Senior Manager",
         "Location": "Various locations",
         "Job Description": "Business Architecture Senior Manager",
-        "Experience Required": "Senior Level",
-        "Page": 4,
-        "Index": 7
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Oracle Platform Security Manager",
         "Location": "Various locations",
         "Job Description": "Security Consulting Senior Manager",
-        "Experience Required": "Senior Level",
-        "Page": 4,
-        "Index": 8
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Oracle SQL/ PLSQL Lead Developer - 5384983",
         "Location": "Various locations",
         "Job Description": "Database Administration Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 9
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "SAP JVA/PRA Lead",
         "Location": "Various locations",
         "Job Description": "Technology Consulting Manager",
-        "Experience Required": "Senior Level",
-        "Page": 4,
-        "Index": 10
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "SAP ABAP Cloud for S/4HANA Developer",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 11
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "SAP BTP Consultant",
         "Location": "Various locations",
         "Job Description": "Technology Consulting Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 4,
-        "Index": 12
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Integrations Lead- Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 1
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Technical Manager - Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Manager",
-        "Experience Required": "Senior Level",
-        "Page": 5,
-        "Index": 2
+        "Experience Required": "Senior Level"
     },
     {
         "Job Title": "Workday Certified Integration Developer Consultant - Education/Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 3
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Data Consultant",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 4
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Financials FDM Lead – Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 5
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Financials R2R Consultant – Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 6
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Prism Lead - Education & Government",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 7
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Financials Adaptive Consultant – Education & Govt",
         "Location": "Various locations",
         "Job Description": "Business Architecture Team Lead/Consultant",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 8
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Workday Certified Student Records/Curriculum/Advising Lead - Higher Education",
         "Location": "Various locations",
         "Job Description": "Business Architecture Associate Manager",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 9
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "^Full Stack JAVA Developer - 5467547",
         "Location": "Florham Park, NJ",
         "Job Description": "Software Development Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 10
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "^ETL Database Engineer  5411332",
         "Location": "Bloomington, IL",
         "Job Description": "Data Eng, Mgmt & Governance Senior Analyst",
-        "Experience Required": "Mid-Level",
-        "Page": 5,
-        "Index": 11
+        "Experience Required": "Mid-Level"
     },
     {
         "Job Title": "Consulting Summer Analyst - NAELFY25",
         "Location": "Various locations",
         "Job Description": "Mgmt Consulting Analyst",
-        "Experience Required": "Early Career",
-        "Page": 5,
-        "Index": 12
+        "Experience Required": "Early Career"
     }
 ]
