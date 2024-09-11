@@ -13,7 +13,7 @@ response = session.get(url)
 # Check if the request was successful
 if response.status_code == 200:
     # Define the filename to save the HTML content
-    filename = 'scraped_linkedin.html'
+    filename = 'scraped_linkedin.txt'
 
     # Open the file in write mode and save the HTML content
     with open(filename, 'w', encoding='utf-8') as file:
