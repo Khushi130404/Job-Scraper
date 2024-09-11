@@ -28,7 +28,7 @@ driver.get(base_url)
 all_data = []
 
 def random_sleep():
-    time.sleep(random.uniform(10, 15))
+    time.sleep(random.uniform(10, 25))
 
 # Function to click the "Load More" button if available
 def click_load_more():
@@ -114,7 +114,7 @@ scrape_page()
 print("Initial page data collected")
 
 # Limit the number of "Load More" clicks
-max_clicks = 1
+max_clicks = 0
 click_count = 0
 
 # Click 'Load More' and scrape additional pages, up to the max_clicks limit
