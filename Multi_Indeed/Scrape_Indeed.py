@@ -59,20 +59,22 @@ def scrape_page():
             title_element = soup.select_one("h1.jobsearch-JobInfoHeader-title")
             title = title_element.get_text(strip=True) if title_element else "No Title Available"
 
-            company_element = soup.select_one("span.jobsearch-JobInfoHeader-companyNameSimple")
+            company_element = soup.select_one("a.css-1ioi40n")
             company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
 
             experience_element = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
             experience = " | ".join([li.get_text(strip=True) for li in experience_element.find_all('li')]) if experience_element else "Not Disclosed"
 
-            salary_element = soup.select_one("div.jobsearch-JobMetadataHeader-item.salarySnippet")
+            salary_element = soup.select_one("div.js-match-insights-provider-tvvxwd")
             salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
 
-            location_element = soup.select_one("div.js-match-insights-provider-tvvxwd")
+            location_element = soup.select_one("div.css-1ojh0uo")
             location = location_element.get_text(strip=True) if location_element else "No Location Available"
 
             description_element = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(9)")
             description = description_element.get_text(strip=True) if description_element else "No Description Available"
+
+
 
             job_data = {
                 "Job Title": title,

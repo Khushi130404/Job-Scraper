@@ -32,14 +32,6 @@
         "Job Description": "No Description Available"
     },
     {
-        "Job Title": "IT Service Desk Specialist",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "Full-time",
-        "Job Description": ""
-    },
-    {
         "Job Title": "IT Coordinator",
         "Company Name": "No Company Name Available",
         "Experience Required": "Proficient with Google products and Android (i.e. Google Business Suite) | Proficient with Apple products and iOS | Proficient with Windows products and operating software | Experience with HTML, Wordpress, Squarespace, and Shopify | Highly developed hardware/software troubleshooting techniques | Ability to provide L2/L3 technical support | Willingness to work a flexible schedule, including nights and weekends, based on the needs of the business | Excellent communication and problem solving skills",
@@ -48,11 +40,11 @@
         "Job Description": "Marketing & Accounting Support"
     },
     {
-        "Job Title": "IT Events Program Manager",
+        "Job Title": "IT Service Desk Specialist",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "$95,000 - $105,000 a year",
+        "Location": "Full-time",
         "Job Description": ""
     },
     {
@@ -72,6 +64,14 @@
         "Job Description": "No Description Available"
     },
     {
+        "Job Title": "Computer Systems Technician, Walt Disney World",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$37.43 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
         "Job Title": "Associate Tech User Support Analyst",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
@@ -88,19 +88,19 @@
         "Job Description": "NewYork-Presbyterian Hospital is an equal opportunity employer."
     },
     {
-        "Job Title": "Computer Systems Technician, Walt Disney World",
+        "Job Title": "Product Support Specialist (Healthcare IT Support- Must have DICOM and HL7)",
         "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
+        "Experience Required": "401(k) | Dental insurance | Health insurance | Paid time off | Vision insurance",
         "Salary": "Not Disclosed",
-        "Location": "$37.43 an hour",
-        "Job Description": "No Description Available"
+        "Location": "$74,000 - $85,000 a year",
+        "Job Description": "Travel:"
     },
     {
-        "Job Title": "IT Support Technician 1",
+        "Job Title": "Services Analyst - IT",
         "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
+        "Experience Required": "Annual salary will vary based on a candidate's skills, qualifications, experience, and other factors: $84,000-$126,000 | Annual bonus and incentive pay up to 10% | 401(k) match and annual company contribution | Medical, Dental and Vision Insurance | Life and disability insurance | Generous paid time off, including vacation, floating and fixed holidays and sick time | Maternity leave as well as paid bonding/primary caregiver leave or parental leave for the birth or adoption of a child or to care for an ill family member, as applicable (eligibility based on position) | Long Term Incentive Plan for eligible positions | Wellbeing programs such as tuition reimbursement, adoption assistance and fitness reimbursement | Referral bonus program | And much more",
         "Salary": "Not Disclosed",
-        "Location": "Full-time",
+        "Location": "$84,000 - $126,000 a year",
         "Job Description": "No Description Available"
     },
     {
@@ -112,27 +112,27 @@
         "Job Description": ""
     },
     {
-        "Job Title": "IT Project Manager 1 (13351-2)",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "$40",
-        "Salary": "Not Disclosed",
-        "Location": "$40 an hour",
-        "Job Description": "Compensation"
-    },
-    {
-        "Job Title": "IT Support Tier 1",
+        "Job Title": "IT Support Technician 1",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "No Location Available",
-        "Job Description": "This job has no supervisory responsibilities."
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
     },
     {
-        "Job Title": "IT Help Desk Technician",
+        "Job Title": "IT Asset Coordinator",
         "Company Name": "No Company Name Available",
-        "Experience Required": "Manage user accounts. | Train new hires on infrastructure and operating system use. | Train users when systems or applications are upgraded. | Schedule requests to add, move or change hardware, software or phones. | Document procedures and maintain a library of information so that repeat questions or issues can be solved quickly",
+        "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "$30.08 - $38.92 an hour",
+        "Location": "$23.07 - $28.21 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Computer Technician - 15452",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Knowledge of healthcare regulations and compliance standards (e.g., HIPAA). | Understanding of data security and privacy practices in a healthcare setting.",
+        "Salary": "Not Disclosed",
+        "Location": "$23.76 - $36.82 an hour",
         "Job Description": "No Description Available"
     },
     {
@@ -144,11 +144,75 @@
         "Job Description": "Department: Continuous contact with departmental staff and student employees in support of client assistance regarding status and resolution of client issues."
     },
     {
-        "Job Title": "Computer Technician - 15452",
+        "Job Title": "Service Desk Analyst-Associate",
         "Company Name": "No Company Name Available",
-        "Experience Required": "Knowledge of healthcare regulations and compliance standards (e.g., HIPAA). | Understanding of data security and privacy practices in a healthcare setting.",
+        "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "$23.76 - $36.82 an hour",
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Support Technician 1",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Support Tier 1",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "No Location Available",
+        "Job Description": "This job has no supervisory responsibilities."
+    },
+    {
+        "Job Title": "IT Technology Services Associate",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "We believe in the physical and mental well-being of our employees and are committed to offering comprehensive benefits that fit their personal needs. Our robust employee benefits package includes:"
+    },
+    {
+        "Job Title": "Information Technology Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$62,107 - $96,770 a year",
+        "Job Description": "This Direct-Hire position is in the Food and Drug Administration and is located in the Center for Tobacco Products (CTP), Office of Science (OS), Division of Regulatory Science Informatics (DRSI), Informatics Services and Support Branch. The Informatics Services and Support Branch is responsible for providing data and technology modernization, IT project management, customer service, and application learning/training support."
+    },
+    {
+        "Job Title": "IT Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Medical | Health Advocate – This confidential service can help you; your spouse, dependent children, parents, and parents-in-law resolve health care and insurance-related issues, manage chronic conditions and improve your health and well-being. | Dental – Delta Dental PPO; DeltaCare USA | Vision – VSP Vision Plan | 401(k) | Flexible Spending Account | Onsite Wellness Clinic – Onsite physician for basic health and wellness consultations.",
+        "Salary": "Not Disclosed",
+        "Location": "$60,000 - $92,000 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Associate 1",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "No Location Available",
+        "Job Description": "A maximum of 90 semester hours may be combined with experience or training in information technology to substitute for the baccalaureate degree."
+    },
+    {
+        "Job Title": "IT Infrastructure Analyst (Alexandria, MN)",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$94,018 - $114,911 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Support Analyst",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "No Location Available",
         "Job Description": "No Description Available"
     },
     {
@@ -160,51 +224,11 @@
         "Job Description": "No Description Available"
     },
     {
-        "Job Title": "IT Infrastructure Analyst (Alexandria, MN)",
+        "Job Title": "Computer Technician",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "$94,018 - $114,911 a year",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "IT Support Analyst, Rodeo Refinery",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "$75,430 - $88,600 a year",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "Associate Tech User Support Analyst",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "$48,800 - $73,200 a year",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "2025 Early Talent – Technology - IT & Cyber Risk",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "Full-time",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "Information Technology Specialist",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "$62,107 - $96,770 a year",
-        "Job Description": "This Direct-Hire position is in the Food and Drug Administration and is located in the Center for Tobacco Products (CTP), Office of Science (OS), Division of Regulatory Science Informatics (DRSI), Informatics Services and Support Branch. The Informatics Services and Support Branch is responsible for providing data and technology modernization, IT project management, customer service, and application learning/training support."
-    },
-    {
-        "Job Title": "IT Support Analyst",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "No Location Available",
+        "Location": "$22.77 - $28.46 an hour",
         "Job Description": "No Description Available"
     },
     {
@@ -216,11 +240,243 @@
         "Job Description": "No Description Available"
     },
     {
-        "Job Title": "Analyst, Information Technology Support",
+        "Job Title": "Technology Support Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$55,265 - $61,406 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Support Analyst, Rodeo Refinery",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$75,430 - $88,600 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Information Technology Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$62,107 - $96,770 a year",
+        "Job Description": "This Direct-Hire position is in the Food and Drug Administration and is located in the Center for Tobacco Products (CTP), Office of Science (OS), Division of Regulatory Science Informatics (DRSI), Informatics Services and Support Branch. The Informatics Services and Support Branch is responsible for providing data and technology modernization, IT project management, customer service, and application learning/training support."
+    },
+    {
+        "Job Title": "IT Systems Administrator I – Denver International Airport",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "FBI Background Check: FBI criminal background check is required for all positions at Denver International Airport (DEN). Employees are also required to report any felony convictions and/or moving violations to maintain this clearance and be eligible for continued employment. By position, a pre-employment physical/drug test may be required. | Snow/Emergency Duties: Denver International Airport is a 24/7/365 team operation. If weather conditions warrant or an emergency crisis occurs, all DEN employees can be required to work extended hours and/or shifts.",
+        "Salary": "Not Disclosed",
+        "Location": "$28.50 - $43.65 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Service Desk Technician, Tier I",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$52,000 - $72,800 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Computer Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$22.77 - $28.46 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "INFORMATION TECHNOLOGY ASSOCIATE",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$4,791 - $8,485 a month",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Systems Administrator II – Denver International Airport",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "FBI Background Check: FBI criminal background check is required for all positions at Denver International Airport (DEN). Employees are also required to report any felony convictions and/or moving violations to maintain this clearance and be eligible for continued employment. By position, a pre-employment physical/drug test may be required. | Snow/Emergency Duties: Denver International Airport is a 24/7/365 team operation. If weather conditions warrant or an emergency crisis occurs, all DEN employees can be required to work extended hours and/or shifts.",
+        "Salary": "Not Disclosed",
+        "Location": "$70,765 - $116,762 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Computer Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Public school",
+        "Salary": "Not Disclosed",
+        "Location": "$46,000 - $52,000 a year",
+        "Job Description": "The information contained in this position description is in compliance with state and federal law (ADA, EEOC)."
+    },
+    {
+        "Job Title": "IT Support Specialist",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
         "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Service Desk Technician - IT",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "From $24.78 an hour",
+        "Job Description": "Starting Hourly Rate: 24.78"
+    },
+    {
+        "Job Title": "Information Technology Generalist I",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Your application must include aresume. | If you are claiming education in your answers to the supplemental application questions, you must attach a copy of your college transcripts for your claim to be accepted toward meeting the minimum requirements. Unofficial transcripts are acceptable. | Your application must be submitted by the posting closing date.Late applications and other required materials will not be accepted. | Failure to comply with the above application requirements may eliminate you from consideration for this position.",
+        "Salary": "Not Disclosed",
+        "Location": "$58,035 - $88,235 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT SPECIALIST",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "This job operates in a professional office environment. This role routinely uses standard office equipment such as laptop computers, photocopiers, and smartphones."
+    },
+    {
+        "Job Title": "IT Technical Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$60,774 - $87,515 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Assistant",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Part-time",
+        "Job Description": "The mission of the Office of Student Financial Aid (OSFA) is to offer services and programs to students through awards funded from federal, state and private organizations. The primary mission of the Office is to provide eligible students with funds to finance and complete their education within the boundaries of federal, state and university regulations. The focus of the Office is to help students develop an understanding of the need to be proactive consumers of educational opportunities at George Mason University."
+    },
+    {
+        "Job Title": "IT Security Analyst",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$75,000 - $80,000 a year",
+        "Job Description": "Pay Rate:Pay Range"
+    },
+    {
+        "Job Title": "Information Systems Technician I",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "You will work on multiple assignments with competing deadlines | You will work in a busy, fast-paced workplace | Your customers will include some people with strong personalities and/or high expectations",
+        "Salary": "Not Disclosed",
+        "Location": "$75,882.72 - $92,235.96 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Information Technology (IT) Administrative Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Computer Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Maintain a system log for the IVC classroom systems.",
+        "Salary": "Not Disclosed",
+        "Location": "$21.63 - $25.00 an hour",
+        "Job Description": "Standard Hours per Week40"
+    },
+    {
+        "Job Title": "Information Technology Trainee",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$58,934.77 - $82,927.14 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Help Desk Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$54,351.05 - $76,649.88 a year",
+        "Job Description": "Experience:Minimum of 1 year of professional experience in providing technology support."
+    },
+    {
+        "Job Title": "IT Support Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$58,500 - $62,000 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Service Desk Analyst-Associate",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "RLF ASSOCIATE SERVICE DESK AGENT",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Know Me: Anticipate my needs and status to deliver effective care | Show Me the Way: Guide and prompt my actions to arrive at better outcomes and better health | Coordinate for Me: Own the complexity of my care through coordination",
+        "Salary": "Not Disclosed",
+        "Location": "$27.36 - $34.90 an hour",
+        "Job Description": "These principles apply to ALL employees:SHC Commitment to Providing an Exceptional Patient & Family ExperienceStanford Health Care sets a high standard for delivering value and an exceptional experience for our patients and families. Candidates for employment and existing employees must adopt and execute C-I-CARE standards for all of patients, families and towards each other. C-I-CARE is the foundation of Stanford’s patient-experience and represents a framework for patient-centered interactions. Simply put, we do what it takes to enable and empower patients and families to focus on health, healing and recovery.You will do this by executing against our three experience pillars, from the patient and family’s perspective:"
+    },
+    {
+        "Job Title": "IT Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Technology Experience Specialist Associate",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$40,000 - $46,000 a year",
+        "Job Description": "To learn more about diversity, equity, and inclusion in LSA, please visit lsa.umich.edu/lsa/dei."
+    },
+    {
+        "Job Title": "IT Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "No Location Available",
+        "Job Description": "About Us:Carroll College is a leading private, liberal arts college in the American West. Carroll’s campus rests on 63 acres at the edge of downtown and historic Helena, the capital city of Montana. The surrounding beauty of the Rocky Mountains and Montana fosters wonder and awe, giving the perfect backdrop to a worldly education. More than 75 miles of hiking and biking trails are just minutes from campus, and Helena is in close proximity to the Continental Divide Trail, natural hot springs, Great Divide Ski Area and the Missouri River. Yellowstone National Park and Glacier National Park are just a few hours away."
+    },
+    {
+        "Job Title": "IT Associate",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "No Location Available",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Service Desk Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "High school graduate or equivalent; Associate or Bachelor’s degree in Information Technology or related field and/or industry recognized certifications are preferred | Obtain Support Analyst or Desktop Technician certification through the Help Desk Institute within approximately 1 year of hire | Valid driver's license and qualifying driving record for company automobile insurance",
+        "Salary": "Not Disclosed",
+        "Location": "$25.58 - $34.70 an hour",
         "Job Description": "No Description Available"
     },
     {
@@ -232,11 +488,115 @@
         "Job Description": "No Description Available"
     },
     {
-        "Job Title": "Computer Technician",
+        "Job Title": "IT Support Analyst",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "$22.77 - $28.46 an hour",
+        "Location": "No Location Available",
         "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Support Specialist Distribution Center",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$20.05 - $30.10 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Systems Administrator II – Denver International Airport",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "FBI Background Check: FBI criminal background check is required for all positions at Denver International Airport (DEN). Employees are also required to report any felony convictions and/or moving violations to maintain this clearance and be eligible for continued employment. By position, a pre-employment physical/drug test may be required. | Snow/Emergency Duties: Denver International Airport is a 24/7/365 team operation. If weather conditions warrant or an emergency crisis occurs, all DEN employees can be required to work extended hours and/or shifts.",
+        "Salary": "Not Disclosed",
+        "Location": "$70,765 - $116,762 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Help Desk Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "This position is primarily performed in an indoor environment | While performing the duties of this job the employee is regularly required to: | Use hands to finger, handle, and feel | Sit, stand, walk, bend, and stoop | Sit at a desk or work center and operate a desktop or tablet computer, keyboard and mouse | Reach with hands and arms | Lift, carry, push and/or pull 10-20 lbs. | Talk and hear | While performing the duties of this job the employee is occasionally required to: | Crawl, climb, and crouch | Work in constrained spaces | Lift, carry, push and/or pull over 50 lbs. with assistance | Specific vision abilities required by this job include close vision, distance vision, color vision, and depth perception | There is minimal exposure to dust, dirt, and chemicals | The noise level in the work environment is generally moderate",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "CERTIFICATES, LICENSES AND REGISTRATIONS"
+    },
+    {
+        "Job Title": "IT Security Analyst",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$75,000 - $80,000 a year",
+        "Job Description": "Pay Rate:Pay Range"
+    },
+    {
+        "Job Title": "IT Help Desk Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$51,000 - $64,500 a year",
+        "Job Description": "Education/Experience Guidelines:"
+    },
+    {
+        "Job Title": "Service Desk Technician, Tier I",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$52,000 - $72,800 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Information Technology Analyst I",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "2024 “Great Place To Work Certified” | 2024 “America’s Best Large Employers” –Forbes | 2024 “Best Places to Work in IT” –Computerworld | 2023 “Best Employers for Women” –Forbes | 2023 “Workplace Well-being Platinum Winner” –Aetna | 2023 “America’s Best-In-State Employers” –Forbes | 2022 “LGBTQ+ Healthcare Equality Leader” - Human Rights Campaign | 2022 “Top 50 Companies for Diversity”– Diversity Inc. | 2022 “Best Company for Multicultural Women”– Seramount | 2022 “Top Company for Executive Women”- Seramount | “Silver HCM Excellence Award for Learning & Development” –Brandon Hall Group | 2022 “Best Adoption Friendly Workplace” -Dave Thomas Foundation",
+        "Salary": "Not Disclosed",
+        "Location": "$63,000 - $90,500 a year",
+        "Job Description": "NewYork-Presbyterian Hospital is an equal opportunity employer."
+    },
+    {
+        "Job Title": "IT Support Analyst I - IS Service Desk",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Behaves in a mindful manner focused on self, patient, visitor, and team safety. | Demonstrates accountability and commitment to quality work. | Participates actively in process improvement and adoption of standard work.",
+        "Salary": "Not Disclosed",
+        "Location": "$21.36 - $26.70 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Help Desk Technician (part-time)",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$26 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Classroom Support Professional / Information Technology Professional",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": "At-the-elbow customer service"
+    },
+    {
+        "Job Title": "Information Technology Specialist (Non-Competitive)",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$68,049.63 - $96,532.47 a year",
+        "Job Description": "CLOSING DATE:9/20/2024"
+    },
+    {
+        "Job Title": "IT Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": ""
+    },
+    {
+        "Job Title": "IT Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "401(k) | 401(k) matching | Dental insurance | Vision insurance | Disability insurance | Health insurance | Health savings account | Life insurance | Paid time off | Floating holiday time | Mental health time off | Volunteer time off",
+        "Salary": "Not Disclosed",
+        "Location": "$54,000 - $68,000 a year",
+        "Job Description": "Pay: $54,000 - $68,000 annually"
     }
 ]
