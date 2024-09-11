@@ -1,11 +1,43 @@
 [
     {
-        "Job Title": "IT Support Specialist I",
+        "Job Title": "IT Specialist (Remote)",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$50,000 - $60,000 a year",
+        "Job Description": "Compensation Range: $50,000 - $60,000 per year dependent upon experience"
+    },
+    {
+        "Job Title": "IT PROFESSIONAL 2",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$73,310 - $109,641 a year",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Supervisor, IT Service Desk",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$80,000 - $90,000 a year",
+        "Job Description": ""
+    },
+    {
+        "Job Title": "IT Help Desk Technician",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Manage user accounts. | Train new hires on infrastructure and operating system use. | Train users when systems or applications are upgraded. | Schedule requests to add, move or change hardware, software or phones. | Document procedures and maintain a library of information so that repeat questions or issues can be solved quickly",
+        "Salary": "Not Disclosed",
+        "Location": "$30.08 - $38.92 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Service Desk Specialist",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
         "Location": "Full-time",
-        "Job Description": "No Description Available"
+        "Job Description": ""
     },
     {
         "Job Title": "IT Coordinator",
@@ -16,51 +48,11 @@
         "Job Description": "Marketing & Accounting Support"
     },
     {
-        "Job Title": "Product Support Specialist (Healthcare IT Support- Must have DICOM and HL7)",
+        "Job Title": "IT Systems Administrator II – Denver International Airport",
         "Company Name": "No Company Name Available",
-        "Experience Required": "401(k) | Dental insurance | Health insurance | Paid time off | Vision insurance",
+        "Experience Required": "FBI Background Check: FBI criminal background check is required for all positions at Denver International Airport (DEN). Employees are also required to report any felony convictions and/or moving violations to maintain this clearance and be eligible for continued employment. By position, a pre-employment physical/drug test may be required. | Snow/Emergency Duties: Denver International Airport is a 24/7/365 team operation. If weather conditions warrant or an emergency crisis occurs, all DEN employees can be required to work extended hours and/or shifts.",
         "Salary": "Not Disclosed",
-        "Location": "$74,000 - $85,000 a year",
-        "Job Description": "Travel:"
-    },
-    {
-        "Job Title": "IT Specialist",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "Full-time",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "Help Desk Specialist",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Maintain accurate logs of support requests, solutions, and follow-up actions in the help desk",
-        "Salary": "Not Disclosed",
-        "Location": "Full-time",
-        "Job Description": ""
-    },
-    {
-        "Job Title": "Services Analyst - IT",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Annual salary will vary based on a candidate's skills, qualifications, experience, and other factors: $84,000-$126,000 | Annual bonus and incentive pay up to 10% | 401(k) match and annual company contribution | Medical, Dental and Vision Insurance | Life and disability insurance | Generous paid time off, including vacation, floating and fixed holidays and sick time | Maternity leave as well as paid bonding/primary caregiver leave or parental leave for the birth or adoption of a child or to care for an ill family member, as applicable (eligibility based on position) | Long Term Incentive Plan for eligible positions | Wellbeing programs such as tuition reimbursement, adoption assistance and fitness reimbursement | Referral bonus program | And much more",
-        "Salary": "Not Disclosed",
-        "Location": "$84,000 - $126,000 a year",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "IT",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "$3,270 - $6,370 a month",
-        "Job Description": "The global Information Technology (IT) Function is leading efforts to align IT and Business Strategy, leverage IT investments, and optimize end to end business processes and associated information integration technologies. Through these efforts, IT helps to improve the competitive position of Corning's businesses through IT enabled processes. IT also delivers Information Technology applications, infrastructure, and project services in a cost efficient manner to Corning worldwide."
-    },
-    {
-        "Job Title": "IT TECHNICIAN 4",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "$56,689.00 - $83,666.16 a year",
+        "Location": "$70,765 - $116,762 a year",
         "Job Description": "No Description Available"
     },
     {
@@ -72,23 +64,39 @@
         "Job Description": "Starting Hourly Rate: 24.78"
     },
     {
-        "Job Title": "IT Systems Administrator II – Denver International Airport",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "FBI Background Check: FBI criminal background check is required for all positions at Denver International Airport (DEN). Employees are also required to report any felony convictions and/or moving violations to maintain this clearance and be eligible for continued employment. By position, a pre-employment physical/drug test may be required. | Snow/Emergency Duties: Denver International Airport is a 24/7/365 team operation. If weather conditions warrant or an emergency crisis occurs, all DEN employees can be required to work extended hours and/or shifts.",
-        "Salary": "Not Disclosed",
-        "Location": "$70,765 - $116,762 a year",
-        "Job Description": "No Description Available"
-    },
-    {
-        "Job Title": "IT Technician, Senior",
+        "Job Title": "IT TECHNICIAN 4",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "Day shift",
+        "Location": "$56,689.00 - $83,666.16 a year",
         "Job Description": "No Description Available"
     },
     {
-        "Job Title": "IT Customer Service Representative",
+        "Job Title": "IT Support Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "Full-time",
+        "Job Description": ""
+    },
+    {
+        "Job Title": "IT Helpdesk Specialist",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "No Location Available",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Computer Systems Technician, Walt Disney World",
+        "Company Name": "No Company Name Available",
+        "Experience Required": "Not Disclosed",
+        "Salary": "Not Disclosed",
+        "Location": "$37.43 an hour",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "IT Specialist",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
@@ -96,27 +104,19 @@
         "Job Description": "No Description Available"
     },
     {
-        "Job Title": "IT Customer Support Paraprofessional",
+        "Job Title": "Services Analyst - IT",
         "Company Name": "No Company Name Available",
-        "Experience Required": "Full-time schedule (12-months, 40-hours a week). | 6-month probationary period. | Criminal background check is required. | May be required to work alternate shift. | Requires local or regional travel. | On premise presence is required; 100% remote work is not available. | This position is designated a bargaining unit position. Membership is optional.",
+        "Experience Required": "Annual salary will vary based on a candidate's skills, qualifications, experience, and other factors: $84,000-$126,000 | Annual bonus and incentive pay up to 10% | 401(k) match and annual company contribution | Medical, Dental and Vision Insurance | Life and disability insurance | Generous paid time off, including vacation, floating and fixed holidays and sick time | Maternity leave as well as paid bonding/primary caregiver leave or parental leave for the birth or adoption of a child or to care for an ill family member, as applicable (eligibility based on position) | Long Term Incentive Plan for eligible positions | Wellbeing programs such as tuition reimbursement, adoption assistance and fitness reimbursement | Referral bonus program | And much more",
         "Salary": "Not Disclosed",
-        "Location": "$3,999 - $5,370 a month",
-        "Job Description": "The Information Technology Division (IT) deploys strong technical skills and a passion for improving the lives of students, staff, and faculty in a dynamic teaching, learning, and working environment."
+        "Location": "$84,000 - $126,000 a year",
+        "Job Description": "No Description Available"
     },
     {
-        "Job Title": "Desktop Technician - IT",
+        "Job Title": "IT Support Technician 1",
         "Company Name": "No Company Name Available",
         "Experience Required": "Not Disclosed",
         "Salary": "Not Disclosed",
-        "Location": "From $27.64 an hour",
-        "Job Description": "Starting Hourly Rate: 27.64"
-    },
-    {
-        "Job Title": "IT Customer Support Representative",
-        "Company Name": "No Company Name Available",
-        "Experience Required": "Not Disclosed",
-        "Salary": "Not Disclosed",
-        "Location": "$20 - $27 an hour",
+        "Location": "Full-time",
         "Job Description": "No Description Available"
     }
 ]

@@ -58,7 +58,7 @@ while page <= max_pages:
             title_element = soup.select_one("h1.jobsearch-JobInfoHeader-title")
             title = title_element.get_text(strip=True) if title_element else "No Title Available"
 
-            company_element = soup.select_one("div.jobsearch-JobInfoHeader-companyNameSimple")
+            company_element = soup.select_one("span.jobsearch-JobInfoHeader-companyNameSimple")
             company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
 
             experience_element = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
