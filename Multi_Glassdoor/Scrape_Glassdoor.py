@@ -11,6 +11,8 @@ import pandas as pd
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from MultiplePage.Naukri_Store import rating
+
 # Initialize Chrome options
 chrome_options = Options()
 # Uncomment if running in headless mode
@@ -29,16 +31,17 @@ all_data = []
 # Function to click the "Load More" button if available
 def click_load_more():
     try:
+        # Use the updated selector for the "Show more jobs" button
         load_more_button = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "button[data-test='load-more-jobs']"))
+            EC.presence_of_element_located((By.CSS_SELECTOR, "button[data-test='load-more']"))
         )
         if load_more_button:
             load_more_button.click()
-            time.sleep(5)  # Adjust as needed
-            print("Clicked 'Load More' button")
+            time.sleep(5)  # Adjust this based on page load time
+            print("Clicked 'Show more jobs' button")
             return True
     except Exception as e:
-        print(f"No 'Load More' button found: {e}")
+        print(f"No 'Show more jobs' button found or error occurred: {e}")
     return False
 
 # Step 1: Scrape the data from the current page
@@ -46,7 +49,7 @@ def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    job_cards = soup.select("a.jobLink")  # Update selector as needed
+    job_cards = soup.select("a.JobCard_trackingLink_GrRYn")  # Update selector as needed
     for job_card in job_cards:
         try:
             job_link = job_card.get('href')
@@ -59,27 +62,47 @@ def scrape_page():
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
 
-            title_element = soup.select_one("div.e11nt52q6")
+            title_element = soup.select_one("h1.heading_Heading__BqX5J")
             title = title_element.get_text(strip=True) if title_element else "No Title Available"
 
-            company_element = soup.select_one("div.e11nt52q1 span")
+            company_element = soup.select_one("h4.heading_Heading__BqX5J")
             company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
 
-            location_element = soup.select_one("div.e11nt52q2 span")
+            location_element = soup.select_one("div.JobDetails_jobDescription_uW_fK p:nth-of-type(8)")
             location = location_element.get_text(strip=True) if location_element else "No Location Available"
 
-            salary_element = soup.select_one("span.css-56kyx5 span[data-test='detailSalary']")
+            salary_element = soup.select_one("div.JobDetails_jobDescription_uW_fK p:nth-of-type(4)")
             salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
 
-            description_element = soup.select_one("div.jobDescriptionContent")
-            description = description_element.get_text(strip=True) if description_element else "No Description Available"
+            # experience_element = soup.select_one("div.JobDetails_jobDescription_uW_fK ul:nth-of-type(2)")
+            # experience = experience_element.get_text(strip=True) if experience_element else "No Description Available"
+
+            experience_list = soup.select_one("div.JobDetails_jobDescription_uW_fK ul:nth-of-type(2)")
+            if experience_list:
+                experience = " | ".join([li.get_text(strip=True) for li in experience_list.find_all('li')])
+            else:
+                experience = "No Description Available"
+
+            description_list = soup.select_one("div.JobDetails_jobDescription_uW_fK ul:nth-of-type(1)")
+            if description_list:
+                description = " | ".join([li.get_text(strip=True) for li in description_list.find_all('li')])
+            else:
+                description = "No Description Available"
+
+            rating_element = soup.select_one("div.Rating_Headline_sectionRatingScoreLeft_di1of")
+            rating = rating_element.get_text(strip=True) if rating_element else "No Rating"
+
+            # description_element = soup.select_one("div.jobDescriptionContent")
+            # description = description_element.get_text(strip=True) if description_element else "No Description Available"
 
             job_data = {
                 "Job Title": title,
                 "Company Name": company,
                 "Location": location,
                 "Salary": salary,
+                "Experience" : experience,
                 "Job Description": description,
+                "Ratings" : rating
             }
             all_data.append(job_data)
 
