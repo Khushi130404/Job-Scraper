@@ -11,8 +11,6 @@ import pandas as pd
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from MultiplePage.Naukri_Store import rating
-
 # Initialize Chrome options
 chrome_options = Options()
 # Uncomment if running in headless mode
