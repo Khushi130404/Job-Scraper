@@ -8,6 +8,9 @@ import time
 import csv
 import json
 import pandas as pd
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 # Initialize Chrome options
 chrome_options = Options()
@@ -100,16 +103,28 @@ while page <= max_pages:
     print(f"Page {page} data collected")
 
     # Find and click the "Next" link
+    # try:
+    #     next_link = driver.find_element(By.CSS_SELECTOR, "a.css-163rxa6")
+    #     driver.execute_script("arguments[0].click();", next_link)
+    #     if next_link.is_displayed() and next_link.is_enabled():
+    #         driver.execute_script("arguments[0].click();", next_link)
+    #         page += 1
+    #         time.sleep(5)
+    #     else:
+    #         print("No 'Next' link found or link not clickable. Ending pagination.")
+    #         break
+    # except Exception as e:
+    #     print(f"Error during pagination: {e}")
+    #     break
+
     try:
-        next_link = driver.find_element(By.CSS_SELECTOR, "a.css-163rxa6")
+        # Re-locate the next link just before clicking it to avoid stale reference
+        next_link = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "a.css-163rxa6"))
+        )
         driver.execute_script("arguments[0].click();", next_link)
-        if next_link.is_displayed() and next_link.is_enabled():
-            driver.execute_script("arguments[0].click();", next_link)
-            page += 1
-            time.sleep(5)
-        else:
-            print("No 'Next' link found or link not clickable. Ending pagination.")
-            break
+        page += 1
+        time.sleep(5)
     except Exception as e:
         print(f"Error during pagination: {e}")
         break
