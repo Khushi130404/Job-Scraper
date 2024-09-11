@@ -47,17 +47,15 @@ def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    job_cards = soup.select("a.JobCard_trackingLink_GrRYn")  # Update selector as needed
+    job_cards = soup.select("a[data-test='job-link']")  # Update selector as per the provided structure
     for job_card in job_cards:
         try:
-            driver.execute_script("arguments[0].scrollIntoView(true);", job_card)
-
-            # Open job card in a new tab
-            job_card.click()
-            time.sleep(5)  # Wait for the new page to load
-
-            # Switch to the new tab
-            driver.switch_to.window(driver.window_handles[-1])
+            job_link = job_card.get('href')
+            if job_link and job_link.startswith("/"):
+                job_link = "https://www.glassdoor.co.in" + job_link
+            print(f"Visiting job link: {job_link}")
+            driver.get(job_link)
+            time.sleep(5)  # Wait for the page to load
             # Get the new page source and parse it
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
