@@ -20,7 +20,7 @@ print("Response JSON:", api_response.json())
 # Decode the HTTP response body if it exists
 if "httpResponseBody" in api_response.json():
     http_response_body: bytes = b64decode(api_response.json()["httpResponseBody"])
-    with open('linkedin.html', 'wb') as file:
+    with open('linkedin.txt', 'wb') as file:
         file.write(http_response_body)
 else:
     print("Error: 'httpResponseBody' not found in the response.")

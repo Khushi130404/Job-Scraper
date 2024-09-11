@@ -13,9 +13,9 @@ def send_request():
     print('Response HTTP Status Code: ', response.status_code)
 
     # Save the response content to a file
-    with open('linkedin.html', 'wb') as file:
+    with open('linkedin.txt', 'wb') as file:
         file.write(response.content)
-    print('HTML content saved to linkedin.html')
+    print('HTML content saved to linkedin.txt')
 
 
 send_request()
