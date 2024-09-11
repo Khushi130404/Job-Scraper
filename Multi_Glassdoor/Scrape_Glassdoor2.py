@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import time
+import random
 import csv
 import json
 import pandas as pd
@@ -25,6 +26,9 @@ driver.get(base_url)
 
 # Lists to store data
 all_data = []
+
+def random_sleep():
+    time.sleep(random.uniform(5, 10))
 
 # Function to click the "Load More" button if available
 def click_load_more():
@@ -55,7 +59,7 @@ def scrape_page():
                 job_link = "https://www.glassdoor.co.in" + job_link
             print(f"Visiting job link: {job_link}")
             driver.get(job_link)
-            time.sleep(5)  # Wait for the page to load
+            random_sleep()  # Wait for the page to load
             # Get the new page source and parse it
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
@@ -110,7 +114,7 @@ scrape_page()
 print("Initial page data collected")
 
 # Limit the number of "Load More" clicks
-max_clicks = 5
+max_clicks = 2
 click_count = 0
 
 # Click 'Load More' and scrape additional pages, up to the max_clicks limit
