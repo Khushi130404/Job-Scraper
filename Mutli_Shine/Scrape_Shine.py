@@ -66,7 +66,11 @@ def scrape_page():
             if description_element:
                 description = " | ".join([li.get_text(strip=True) for li in description_element.find_all('li')])
             else:
-                description = "No Description Available"
+                description_element = soup.select_one("div.jobDetail_jsrpRightDetail__wUyf7 ul")
+                if description_element:
+                    description = " | ".join([li.get_text(strip=True) for li in description_element.find_all('span')])
+                else:
+                    description = "No Description Available"
 
             job_data = {
                 "Job Title": title,
@@ -85,24 +89,17 @@ def scrape_page():
             driver.back()
             time.sleep(5)
 
-# Scrape the current (first) page
-# scrape_page()
-# print("Page 1 data collected")
-
-# Step 3: Iterate through pagination links and scrape subsequent pages
 for i, page_url in enumerate(pagination_links):
     try:
         driver.get(page_url)
         time.sleep(5)
         scrape_page()
-        print(f"Page {i + 1} data collected")  # Because page 1 is already scraped
+        print(f"Page {i + 1} data collected")
     except Exception as e:
         print(f"Error scraping page {i + 1}: {e}")
 
-# Close the driver
 driver.quit()
 
-# Save data to CSV, Excel, and JSON files
 csv_file = "shine_job_data.csv"
 keys = all_data[0].keys() if all_data else []
 with open(csv_file, "w", newline="", encoding="utf-8") as output_file:
