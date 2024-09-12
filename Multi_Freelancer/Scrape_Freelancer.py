@@ -15,13 +15,16 @@ chrome_options = Options()
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-base_url = "https://www.freelancer.in/jobs/"
+# Use IT job category on Freelancer India
+query = "it-jobs"
+base_url = f"https://www.freelancer.in/jobs/{query}/"
 driver.get(base_url)
 
 all_data = []
 pagination_links = []
 
 try:
+    # Extract pagination links
     pagination_elements = WebDriverWait(driver, 10).until(
         EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.Pagination-link"))
     )
@@ -30,12 +33,12 @@ try:
 except Exception as e:
     print(f"Error getting pagination links: {e}")
 
-# Step 2: Scrape the data from the current page
+# Function to scrape job data from each page
 def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    job_cards = soup.select("div.JobSearchCard-item")
+    job_cards = soup.select("div.JobSearchCard-item-inner")
     for job_card in job_cards:
         try:
             job_link = job_card.select_one("a.JobSearchCard-primary-heading-link").get('href')
@@ -45,21 +48,23 @@ def scrape_page():
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
 
-            title_element = soup.select_one("h1.JobDetailsHeader-title")
+            # Extract job details
+            title_element = soup.select_one("h1.ng-star-inserted")
             title = title_element.get_text(strip=True) if title_element else "No Title Available"
 
             employer_element = soup.select_one("a.JobDetailsHeader-employer-name-link")
             employer = employer_element.get_text(strip=True) if employer_element else "No Employer Name Available"
 
-            location_element = soup.select_one("span.Location-label")
+            location_element = soup.select_one("fl-col.IconText div.NativeElement")
             location = location_element.get_text(strip=True) if location_element else "No Location Available"
 
-            budget_element = soup.select_one("span.JobDetailsHeader-budget")
+            budget_element = soup.select_one("h2.ng-star-inserted")
             budget = budget_element.get_text(strip=True) if budget_element else "Not Disclosed"
 
-            description_element = soup.select_one("div.JobDetails-description-content")
+            description_element = soup.select_one("fl-text.Project-description div.NativeElement")
             description = description_element.get_text(strip=True) if description_element else "No Description Available"
 
+            # Save job data
             job_data = {
                 "Job Title": title,
                 "Employer Name": employer,
@@ -76,6 +81,7 @@ def scrape_page():
             driver.back()
             time.sleep(5)
 
+# Loop through pagination links to scrape data from multiple pages
 for i, page_url in enumerate(pagination_links[:3]):
     try:
         driver.get(page_url)
@@ -88,18 +94,18 @@ for i, page_url in enumerate(pagination_links[:3]):
 driver.quit()
 
 # Save data to CSV, Excel, and JSON files
-csv_file = "freelancer_job_data.csv"
+csv_file = "freelancer_it_jobs.csv"
 keys = all_data[0].keys() if all_data else []
 with open(csv_file, "w", newline="", encoding="utf-8") as output_file:
     dict_writer = csv.DictWriter(output_file, fieldnames=keys)
     dict_writer.writeheader()
     dict_writer.writerows(all_data)
 
-excel_file = "freelancer_job_data.xlsx"
+excel_file = "freelancer_it_jobs.xlsx"
 df = pd.DataFrame(all_data)
 df.to_excel(excel_file, index=False)
 
-json_file = "freelancer_job_data.json"
+json_file = "freelancer_it_jobs.json"
 with open(json_file, "w", encoding="utf-8") as json_output_file:
     json.dump(all_data, json_output_file, ensure_ascii=False, indent=4)
 
