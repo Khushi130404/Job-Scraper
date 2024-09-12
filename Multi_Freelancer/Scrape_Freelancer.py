@@ -17,7 +17,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 
 # Use IT job category on Freelancer India
 query = "it-jobs"
-base_url = f"https://www.freelancer.in/jobs/{query}/"
+base_url = f"https://www.freelancer.in/jobs/{query}"
 driver.get(base_url)
 
 all_data = []
@@ -38,11 +38,12 @@ def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    job_cards = soup.select("div.JobSearchCard-item-inner")
+    job_cards = soup.select("div.JobSearchCard-item")
     for job_card in job_cards:
         try:
             job_link = job_card.select_one("a.JobSearchCard-primary-heading-link").get('href')
-            driver.get(job_link)
+            full_job_link = "https://www.freelancer.in" + job_link
+            driver.get(full_job_link)
             time.sleep(5)
 
             html = driver.page_source
@@ -82,7 +83,7 @@ def scrape_page():
             time.sleep(5)
 
 # Loop through pagination links to scrape data from multiple pages
-for i, page_url in enumerate(pagination_links[:3]):
+for i, page_url in enumerate(pagination_links[:1]):
     try:
         driver.get(page_url)
         time.sleep(5)
