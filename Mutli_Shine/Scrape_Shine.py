@@ -39,7 +39,7 @@ def scrape_page():
     job_cards = soup.select("div.jobCard_jobCard__jjUmu")
     for job_card in job_cards:
         try:
-            job_link = job_card.select_one("div.jobCard_jobCard_jjUmu a").get('href')
+            job_link = job_card.select_one("div.jobCard_jobCard__jjUmu a").get('href')
             job_link = "https://www.shine.com" + job_link if job_link.startswith("/") else job_link
             driver.get(job_link)
             time.sleep(5)
