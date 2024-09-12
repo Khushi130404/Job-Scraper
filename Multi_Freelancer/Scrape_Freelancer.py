@@ -15,8 +15,7 @@ chrome_options = Options()
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-query = "it-jobs"
-base_url = f"https://www.shine.com/job-search/{query}-jobs"
+base_url = "https://www.freelancer.in/jobs/"
 driver.get(base_url)
 
 all_data = []
@@ -24,7 +23,7 @@ pagination_links = []
 
 try:
     pagination_elements = WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.jsrpcomponent_pagination_navLink__2DsOb"))
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.Pagination-link"))
     )
     for elem in pagination_elements:
         pagination_links.append(elem.get_attribute('href'))
@@ -36,48 +35,36 @@ def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    job_cards = soup.select("div.jobCard_jobCard__jjUmu")
+    job_cards = soup.select("div.JobSearchCard-item")
     for job_card in job_cards:
         try:
-            job_link = job_card.select_one("div.jobCard_jobCard__jjUmu a").get('href')
-            job_link = "https://www.shine.com" + job_link if job_link.startswith("/") else job_link
+            job_link = job_card.select_one("a.JobSearchCard-primary-heading-link").get('href')
             driver.get(job_link)
             time.sleep(5)
 
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
 
-            title_element = soup.select_one("h1.font-size-24")
+            title_element = soup.select_one("h1.JobDetailsHeader-title")
             title = title_element.get_text(strip=True) if title_element else "No Title Available"
 
-            company_element = soup.select_one("div.JobDetailWidget_jobCard_cName__qvsdW span")
-            company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
+            employer_element = soup.select_one("a.JobDetailsHeader-employer-name-link")
+            employer = employer_element.get_text(strip=True) if employer_element else "No Employer Name Available"
 
-            location_element = soup.select_one("div.JobDetailWidget_locationIcon__u85a7 a")
+            location_element = soup.select_one("span.Location-label")
             location = location_element.get_text(strip=True) if location_element else "No Location Available"
 
-            salary_element = soup.select_one("span.JobDetailWidget_salaryIcon__lz4lf")
-            salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
+            budget_element = soup.select_one("span.JobDetailsHeader-budget")
+            budget = budget_element.get_text(strip=True) if budget_element else "Not Disclosed"
 
-            experience_element = soup.select_one("div.JobDetailWidget_jobIcon__mjaNB")
-            experience = experience_element.get_text(strip=True) if experience_element else "No Experience Info Available"
-
-            description_element = soup.select_one("div.jobDetail_jsrpRightDetail__wUyf7 ul ul")
-            if description_element:
-                description = " | ".join([li.get_text(strip=True) for li in description_element.find_all('li')])
-            else:
-                description_element = soup.select_one("div.jobDetail_jsrpRightDetail__wUyf7 ul")
-                if description_element:
-                    description = " | ".join([li.get_text(strip=True) for li in description_element.find_all('span')])
-                else:
-                    description = "No Description Available"
+            description_element = soup.select_one("div.JobDetails-description-content")
+            description = description_element.get_text(strip=True) if description_element else "No Description Available"
 
             job_data = {
                 "Job Title": title,
-                "Company Name": company,
+                "Employer Name": employer,
                 "Location": location,
-                "Salary": salary,
-                "Experience": experience,
+                "Budget": budget,
                 "Job Description": description,
             }
             all_data.append(job_data)
@@ -100,18 +87,19 @@ for i, page_url in enumerate(pagination_links[:3]):
 
 driver.quit()
 
-csv_file = "shine_job_data.csv"
+# Save data to CSV, Excel, and JSON files
+csv_file = "freelancer_job_data.csv"
 keys = all_data[0].keys() if all_data else []
 with open(csv_file, "w", newline="", encoding="utf-8") as output_file:
     dict_writer = csv.DictWriter(output_file, fieldnames=keys)
     dict_writer.writeheader()
     dict_writer.writerows(all_data)
 
-excel_file = "shine_job_data.xlsx"
+excel_file = "freelancer_job_data.xlsx"
 df = pd.DataFrame(all_data)
 df.to_excel(excel_file, index=False)
 
-json_file = "shine_job_data.json"
+json_file = "freelancer_job_data.json"
 with open(json_file, "w", encoding="utf-8") as json_output_file:
     json.dump(all_data, json_output_file, ensure_ascii=False, indent=4)
 
