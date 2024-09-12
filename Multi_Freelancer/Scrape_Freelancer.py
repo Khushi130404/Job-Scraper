@@ -56,8 +56,11 @@ def scrape_page():
             employer_element = soup.select_one("a.JobDetailsHeader-employer-name-link")
             employer = employer_element.get_text(strip=True) if employer_element else "No Employer Name Available"
 
-            location_element = soup.select_one("fl-col.IconText div.NativeElement")
+            location_element = soup.select_one("app-project-view-logged-out-client-info div.NativeElement")
             location = location_element.get_text(strip=True) if location_element else "No Location Available"
+
+            proposal_element = soup.select_one("fl-col.IconText div.NativeElement")
+            proposal = proposal_element.get_text(strip=True) if proposal_element else "No Location Available"
 
             budget_element = soup.select_one("h2.ng-star-inserted")
             budget = budget_element.get_text(strip=True) if budget_element else "Not Disclosed"
@@ -69,8 +72,9 @@ def scrape_page():
             job_data = {
                 "Job Title": title,
                 "Employer Name": employer,
-                "Location": location,
                 "Budget": budget,
+                "Proposal": proposal,
+                "Client_Location": location,
                 "Job Description": description,
             }
             all_data.append(job_data)
