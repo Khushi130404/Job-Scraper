@@ -24,7 +24,7 @@ pagination_links = []
 
 try:
     pagination_elements = WebDriverWait(driver, 10).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.jsrpcomponent_pagination_navLink_2DsOb"))
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "a.jsrpcomponent_pagination_navLink__2DsOb"))
     )
     for elem in pagination_elements:
         pagination_links.append(elem.get_attribute('href'))
@@ -36,7 +36,7 @@ def scrape_page():
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
-    job_cards = soup.select("div.jobCard_jobCard_jjUmu")
+    job_cards = soup.select("div.jobCard_jobCard__jjUmu")
     for job_card in job_cards:
         try:
             job_link = job_card.select_one("div.jobCard_jobCard_jjUmu a").get('href')
