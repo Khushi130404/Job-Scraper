@@ -87,7 +87,7 @@ def scrape_page():
             time.sleep(5)
 
 # Loop through pagination links to scrape data from multiple pages
-for i, page_url in enumerate(pagination_links[:4]):
+for i, page_url in enumerate(pagination_links[:3]):
     try:
         driver.get(page_url)
         time.sleep(5)
