@@ -1,5 +1,29 @@
 [
     {
+        "Job Title": "Indonesian Language Translations - Iban 2",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$15-25 USD / hour",
+        "Proposal": "3 proposals",
+        "Client_Location": "Plano,  United States",
+        "Job Description": "I am in need of translation services from Indonesian into Iban.\n\nIdeal Skills:\n- Fluent in both Indonesian and Iban\n- Exceptional translation skills\n- Experience with formal, academic or professional content\n- Familiarity with potential cultural nuances and ability to convey these in the translation"
+    },
+    {
+        "Job Title": "Business Agreement Drafting",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$10-30 AUD",
+        "Proposal": "20 proposals",
+        "Client_Location": "Austins ferry,  Australia",
+        "Job Description": "I'm in need of a comprehensive business agreement. The contract should clearly outline:\n\n- Payment terms: The specifics about how and when payments will be made.\n- Responsibilities of each party: A detailed breakdown of the roles and obligations of both parties involved.\n\nAdditionally, the contract must include a confidentiality clause to protect sensitive information exchanged during the course of our business relationship. The ideal freelancer for this project should have experience in contract law and business agreements, with a keen understanding of confidentiality stipulations."
+    },
+    {
+        "Job Title": "Sofa and Recliner Parts CAD Drawings",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "₹12500-37500 INR",
+        "Proposal": "8 proposals",
+        "Client_Location": "Bengaluru,  India",
+        "Job Description": "I'm in need of detailed CAD drawings for manufacturing the parts of a sofa and a recliner. The drawings need to be precise, as they're intended for manufacturing.\n\nIdeal Skills:\n- Proficiency in CAD software\n- Experience in furniture design and part drawing\n- Understanding of manufacturing processes and requirements\n\nThe purpose of this project is strictly for manufacturing, so attention to detail and accuracy is paramount. Please, only apply if you have relevant experience and can provide high-quality, precise drawings."
+    },
+    {
         "Job Title": ".NET Multi-platform App UI tracker app development(MAUI)",
         "Employer Name": "No Employer Name Available",
         "Budget": "₹350-650 INR / hour",
@@ -56,14 +80,6 @@
         "Job Description": "I'm seeking a Power BI expert who can assist me in queries and table creation. I'm currently pulling IT asset data from various APIs, specifically related to systems and laptops.\n\nKey Responsibilities:\n- Assist with merging data from multiple sources\n- Help with comparison and adding new columns\n- Create Power BI dashboards that primarily focus on tracking inventory and availability \n\nIdeal Skills & Experience:\n- Proficient in Power BI\n- Experience with data from APIs\n- Skilled in data merging, comparison, and transformation\n- Ability to create insightful dashboards for asset tracking"
     },
     {
-        "Job Title": "No Title Available",
-        "Employer Name": "No Employer Name Available",
-        "Budget": "Not Disclosed",
-        "Proposal": "No Location Available",
-        "Client_Location": "No Location Available",
-        "Job Description": "No Description Available"
-    },
-    {
         "Job Title": "Modern Aesthetic Revamp for ShrewdLearn",
         "Employer Name": "No Employer Name Available",
         "Budget": "₹600-1500 INR",
@@ -96,28 +112,12 @@
         "Job Description": "I need a professional to convert my PDF into an editable Canva document. The project includes:\n\n- Making the text and images from the PDF editable in Canva.\n- Preserving all text styles (fonts, sizes, colors) from the PDF in the Canva doc.\n\nI want the attached PDF to be recreated in Canva - once done, I will inform the designer of which areas need to be 'locked down' so they are un-editable apart from by me"
     },
     {
-        "Job Title": "No Title Available",
-        "Employer Name": "No Employer Name Available",
-        "Budget": "Not Disclosed",
-        "Proposal": "No Location Available",
-        "Client_Location": "No Location Available",
-        "Job Description": "No Description Available"
-    },
-    {
         "Job Title": "Financial Data Analysis in Excel",
         "Employer Name": "No Employer Name Available",
         "Budget": "$10-30 AUD",
         "Proposal": "31 proposals",
         "Client_Location": "Perth,  Australia",
         "Job Description": "I'm looking for a skilled Excel professional who can assist me in analyzing my financial data. The main goal of this project is to generate comprehensive summary reports that can provide insights about my financial situation. \n\nKey Tasks:\n- Conduct thorough analysis of my financial data using Excel\n- Generate clear and concise summary reports based on the analysis\n\nIdeal Skills and Experience:\n- Proficient in Excel, with a strong emphasis on data analysis\n- Experience working with financial data\n- Excellent report writing skills, with the ability to present complex data in a clear and understandable manner.\n\n\n\njust 3 pages report"
-    },
-    {
-        "Job Title": "No Title Available",
-        "Employer Name": "No Employer Name Available",
-        "Budget": "Not Disclosed",
-        "Proposal": "No Location Available",
-        "Client_Location": "No Location Available",
-        "Job Description": "No Description Available"
     },
     {
         "Job Title": "Real Estate Salespersons Needed in India",
@@ -160,14 +160,6 @@
         "Job Description": "I am in need of translation services from Indonesian into LampungNyo .\n\nIdeal Skills:\n- Fluent in both Indonesian and LampungNyo \n- Exceptional translation skills\n- Experience with formal, academic or professional content\n- Familiarity with potential cultural nuances and ability to convey these in the translation"
     },
     {
-        "Job Title": "No Title Available",
-        "Employer Name": "No Employer Name Available",
-        "Budget": "Not Disclosed",
-        "Proposal": "No Location Available",
-        "Client_Location": "No Location Available",
-        "Job Description": "No Description Available"
-    },
-    {
         "Job Title": "Flexible WooCommerce Subscription Implementation",
         "Employer Name": "No Employer Name Available",
         "Budget": "₹1500-12500 INR",
@@ -176,19 +168,131 @@
         "Job Description": "I would like to implement a subscription management and auto-renewal feature that operates as follows:\n\nWe have integrated custom start and end date picker on cart page so subscription logic should be implemented using those fields\n\nAuto-Renewal and Cancellation: If a subscription reaches its end date and the user has not renewed it, the subscription status should automatically change to \"canceled.\" The associated stock should then be returned to the inventory, making it available for others to purchase. They should also get reminders 7 days and 1 day prior renewal asking for renewal.\n\nAdmin Order Page Enhancements: On the admin side, the start and end dates for each subscription should be visible on the order page for better tracking and management.\n\nUser Account Dashboard Features: In the user's WooCommerce \"My Account\" dashboard, the following options should be available:\n\nManage Subscription: Users can view and manage their active subscriptions.\n\nView Start and End Dates: Users can check the start and end dates of their subscriptions.\n\nAuto-Renewal Settings: Users can enable or disable the auto-renewal feature for their subscriptions.\n\nCancel Subscription Option: Users can choose to cancel their subscription, which will set it to automatically cancel on the end date."
     },
     {
-        "Job Title": "No Title Available",
-        "Employer Name": "No Employer Name Available",
-        "Budget": "Not Disclosed",
-        "Proposal": "No Location Available",
-        "Client_Location": "No Location Available",
-        "Job Description": "No Description Available"
-    },
-    {
         "Job Title": "Business Development Associate for E-commerce",
         "Employer Name": "No Employer Name Available",
         "Budget": "₹1500-12500 INR",
         "Proposal": "2 proposals",
         "Client_Location": "Ahmedabad,  India",
         "Job Description": "I'm looking for an experienced Business Development Associate to drive lead conversion in the E-commerce sector. You will be primarily working with cold leads, so your ability to reach out, establish rapport, and ultimately close deals will be crucial. \n\nKey Responsibilities:\n- Convert generated leads into customers through effective communication and negotiation\n- Utilize CRM software for tracking, management and follow-up of leads\n- Meet and exceed sales targets\n- IVR calling\n\nSkills and Experience:\n- Proven experience in sales, preferably within the E-commerce industry\n- Exceptional communication and negotiation skills\n- Proficiency in CRM software\n- Ability to work independently and as part of a team\n\n- Must Be INDIAN"
+    },
+    {
+        "Job Title": "Looks like the page you are looking for doesn't exist.",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "Perhaps you were trying to do this?",
+        "Proposal": "No Location Available",
+        "Client_Location": "No Location Available",
+        "Job Description": "No Description Available"
+    },
+    {
+        "Job Title": "Email Marketing Lead Generation Expert Needed",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$2-8 USD / hour",
+        "Proposal": "6 proposals",
+        "Client_Location": "United Kingdom",
+        "Job Description": "I'm in need of a marketing professional with a strong focus on email marketing for lead generation. \n\nKey Requirements:\n- Experience in lead generation and market research\n- Proficiency in email marketing strategies aimed at increasing sales\n- Ability to craft compelling sales emails featuring product information and features\n\nYour role will primarily focus on generating leads through email, with the ultimate goal of boosting sales. The ideal candidate should be able to understand and convey product information effectively, enticing potential customers to engage with our offerings."
+    },
+    {
+        "Job Title": "Indonesian Language Translations - Balinese 2",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$15-25 USD / hour",
+        "Proposal": "2 proposals",
+        "Client_Location": "Plano,  United States",
+        "Job Description": "I am in need of translation services from Indonesian into Balinese\n\nIdeal Skills:\n- Fluent in both Indonesian and Balinese \n- Exceptional translation skills\n- Experience with formal, academic or professional content\n- Familiarity with potential cultural nuances and ability to convey these in the translation"
+    },
+    {
+        "Job Title": "Troubleshoot Ubuntu 22.04 Postal SMTP",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$10-30 USD",
+        "Proposal": "16 proposals",
+        "Client_Location": "Dallas,  United States",
+        "Job Description": "I am seeking an experienced systems administrator to help troubleshoot my Ubuntu 22.04 Postal SMTP and Acelle Mail configuration. Both my emails are failing to send and I am unable to save the TLS settings in Postal. \n\nKey issues:\n- Emails failing to send\n- TLS settings not saving\n\nWhen I attempt to save the TLS settings in Postal, I receive an error stating that it's unavailable. \n\nI first noticed the problem after making changes to the configuration. I would appreciate prompt assistance in resolving these issues. Ideal skills for this job include expertise in Ubuntu, Postal SMTP, Acelle Mail, and TLS configuration.\n\nIm also using an outside smtp service and i can successfully send a test email but can send emails from a campaign.\n\nMust handle remotely"
+    },
+    {
+        "Job Title": "Indonesian Language Translations - Makasar 2",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$15-25 USD / hour",
+        "Proposal": "3 proposals",
+        "Client_Location": "Plano,  United States",
+        "Job Description": "I am in need of translation services from Indonesian into Makasar.\n\nIdeal Skills:\n- Fluent in both Indonesian and Makasar\n- Exceptional translation skills\n- Experience with formal, academic or professional content\n- Familiarity with potential cultural nuances and ability to convey these in the translation"
+    },
+    {
+        "Job Title": "Airbnb & Booking Listings Data Scraping",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "€30-250 EUR",
+        "Proposal": "Open for bidding",
+        "Client_Location": "Genova,  Italy",
+        "Job Description": "I'm looking for a skilled web scraper to collect data from Airbnb and [login to view URL] listings. The data will include daily prices, availability, minimum stay and the number of guests allowed, with max 50+50+50 listings (3 different locations)  with a total of max 150 listings, for the next six months.\nThe extracted data should be compiled into a Google Sheet (each listing should have its own line in the sheet) and this should automatically update when the sheet is opened.\n\nUse reliable web scraping frameworks (e.g., Python with BeautifulSoup, Scrapy, or Selenium) capable of handling Airbnb’s dynamic JavaScript content.\nError Handling & Compliance:\nMust be scalable for future URLs.\n\n\nKey Requirements:\n- Proficient in web scraping techniques\n- Experience with data collection from Airbnb and Booking\n- Ability to format data into a Google Sheet that auto-updates when opened\n- Capable of ensuring the sheet is structured clearly and without errors\n\n\nThe ideal candidate should be able to start immediately and commit to this project for the full duration. \nPlease provide an estimated timeline, technology stack details, and any necessary requirements.\nPlease include any relevant examples of your previous work in your proposal."
+    },
+    {
+        "Job Title": "I need Leads & Appointment Setter",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$15-25 AUD / hour",
+        "Proposal": "3 proposals",
+        "Client_Location": "Dhaka,  Bangladesh",
+        "Job Description": "I am in need of a professional lead generation and appointment setting service. The leads should be for both residential and commercial prospects in the home security industry. \n\nIdeal candidates for this project should have experience in lead generation and appointment setting, preferably in the home security sector. Strong communication skills and the ability to deliver quality leads are essential."
+    },
+    {
+        "Job Title": "VMware Cloud Director VPN Setup",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$30-250 USD",
+        "Proposal": "5 proposals",
+        "Client_Location": "Yerevan,  Armenia",
+        "Job Description": "I'm looking for an experienced professional to set up a VPN using VMware Cloud Director. The primary objective is to connect our cloud resources with third party on-premises infrastructure.\n\nKey Responsibilities:\n- Configure a secure and efficient VPN connection to link our cloud resources with our on-premises infrastructure.\n- Implement basic user authentication for access control.\n- Ensure the VPN setup is compatible for connection through desktops and laptops.\n\nIdeal Skills:\n- In-depth knowledge and experience with VMware Cloud Director.\n- Strong understanding of VPN configurations and security protocols.\n- Excellent skills in implementing user authentication systems.\n\nPlease note, the VPN is exclusively intended for use with desktops and laptops. Your expertise in this area will be pivotal to the success of this project."
+    },
+    {
+        "Job Title": "NGO Funding Data Extraction from Annual Reports",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "€250-750 EUR",
+        "Proposal": "2 proposals",
+        "Client_Location": "Barcelona,  Spain",
+        "Job Description": "I need a freelancer to help me with an Excel project concerning approximately 60 NGOs. \n\nTasks:\n- Completing an Excel template with data from the annual reports of around 60 NGOs\n- Locating annual reports of these NGOs (2021-2023)\n- Extracting exact annual funding amounts from these reports\n- Including the source of funding alongside the annual amounts\n- Organizing the data by year in the Excel template\n\nIdeal Skills:\n- Proficiency in Excel\n- Strong attention to detail\n- Good research skills\n- Ability to understand and extract relevant data from annual reports\n\nPlease only apply if you are confident in your ability to find these reports and accurately extract the necessary data."
+    },
+    {
+        "Job Title": "Heartfelt Birthday Video Editing",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "₹1500-12500 INR",
+        "Proposal": "12 proposals",
+        "Client_Location": "Delhi,  India",
+        "Job Description": "I'm looking for an amateur video editor who can help me create a 10-minute birthday video for a family member. I will provide the raw footage. The video should have an emotional and heartfelt style, reflecting the significance of the occasion. \n\nKey Requirements:\n- Editing raw footage into a coherent, emotional narrative\n- Incorporating specific songs I will provide at the right moments\n- Using smooth and slow fades as transitions between clips\n\nSkills and Experience:\n- Previous experience in video editing, particularly for emotional content\n- Familiarity with syncing video to music\n- Proficient in using video editing software\n\nA keen eye for storytelling and emotional pacing will be essential for this project."
+    },
+    {
+        "Job Title": "2D Animated Fintech Product Video",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$250-750 AUD",
+        "Proposal": "60 proposals",
+        "Client_Location": "Ocean Grove,  Australia",
+        "Job Description": "I'm looking for a skilled animator to create a 2D animated video for a fintech landing page. The video should explain the product features in a clear and engaging way, aimed at potential customers. \n\nKey tasks include:\n- Creating a 2D animated video that outlines the product features \n- Tailoring the content to appeal to potential customers \n\nIdeal skills and experience for the job:\n- Proficiency in 2D animation \n- Experience in creating product explainer videos \n- Understanding of fintech industry would be a plus."
+    },
+    {
+        "Job Title": "ESP32 Fan Dimmer: Manual & Cloud Control",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "₹600-1500 INR",
+        "Proposal": "5 proposals",
+        "Client_Location": "Pune,  India",
+        "Job Description": "I'm looking for a microcontroller-based fan dimmer using ESP32. This system should allow both manual and cloud control, without humming. Manual control will be facilitated via physical knobs or buttons. Cloud control should incorporate remote access through a mobile application and integration with smart home systems. \n\nKey Requirements:\n- Design and implement a fan dimmer using ESP32\n- Manual control through physical knobs or buttons\n- Cloud control with mobile app access and smart home integration\n- Ensure system operates without humming\n\nIdeal Skills and Experience:\n- Proficient in ESP32 programming\n- Experience with hardware design for manual control interfaces\n- Knowledge in mobile app development for remote control\n- Prior experience with smart home system integrations\n- Solid understanding of noise control in electronic designs"
+    },
+    {
+        "Job Title": "Flutter App - UI Adjustments (3- 4 issues)",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$12-30 SGD",
+        "Proposal": "32 proposals",
+        "Client_Location": "Ipoh,  Malaysia",
+        "Job Description": "Minor adjustment only.\nAmend on the create form, show correct value on dashboard."
+    },
+    {
+        "Job Title": "Indonesian Language Translations - Betawi 2",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$15-25 USD / hour",
+        "Proposal": "5 proposals",
+        "Client_Location": "Plano,  United States",
+        "Job Description": "I am in need of translation services from Indonesian into Betawi .\n\nIdeal Skills:\n- Fluent in both Indonesian and Betawi \n- Exceptional translation skills\n- Experience with formal, academic or professional content\n- Familiarity with potential cultural nuances and ability to convey these in the translation"
+    },
+    {
+        "Job Title": "Indonesian Language Translations - Buginese 2",
+        "Employer Name": "No Employer Name Available",
+        "Budget": "$15-25 USD / hour",
+        "Proposal": "Open for bidding",
+        "Client_Location": "Plano,  United States",
+        "Job Description": "I am in need of translation services from Indonesian into Buginese.\n\nIdeal Skills:\n- Fluent in both Indonesian and Buginese \n- Exceptional translation skills\n- Experience with formal, academic or professional content\n- Familiarity with potential cultural nuances and ability to convey these in the translation"
     }
 ]
