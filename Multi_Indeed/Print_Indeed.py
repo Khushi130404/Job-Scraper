@@ -71,7 +71,7 @@ def scrape_page():
             location = location_element.get_text(strip=True) if location_element else "No Location Available"
 
             # Try to extract job description from a <p> tag first
-            description_element = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(9)")
+            description_element = soup.select_one("div.jobsearch-JobComponent-description p:nth-of-type(1)")
 
             # If the <p> tag is not available, fall back to the first <ul> and collect all <li> items
             if description_element:
