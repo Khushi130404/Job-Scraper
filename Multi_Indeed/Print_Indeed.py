@@ -6,7 +6,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import time
 import json
-import pandas as pd
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -22,8 +21,7 @@ query = "it-jobs"
 base_url = f"https://www.indeed.com/q-{query}-jobs.html"
 driver.get(base_url)
 
-# Lists to store data and pagination links
-all_data = []
+# Lists to store pagination links
 pagination_links = []
 
 # Step 1: Scrape pagination links (2, 3, 4, 5)
@@ -36,6 +34,7 @@ try:
         pagination_links.append(elem.get_attribute('href'))
 except Exception as e:
     print(f"Error getting pagination links: {e}")
+
 
 # Step 2: Scrape the data from the current page
 def scrape_page():
@@ -62,7 +61,8 @@ def scrape_page():
             company = company_element.get_text(strip=True) if company_element else "No Company Name Available"
 
             experience_element = soup.select_one("div.jobsearch-JobComponent-description ul:nth-of-type(5)")
-            experience = " | ".join([li.get_text(strip=True) for li in experience_element.find_all('li')]) if experience_element else "Not Disclosed"
+            experience = " | ".join([li.get_text(strip=True) for li in
+                                     experience_element.find_all('li')]) if experience_element else "Not Disclosed"
 
             salary_element = soup.select_one("div.js-match-insights-provider-tvvxwd")
             salary = salary_element.get_text(strip=True) if salary_element else "Not Disclosed"
@@ -92,7 +92,9 @@ def scrape_page():
                 "Location": location,
                 "Job Description": description,
             }
-            all_data.append(job_data)
+
+            # Print the job data as it is scraped
+            print(json.dumps(job_data, ensure_ascii=False, indent=4))
 
             driver.back()
             time.sleep(5)
@@ -100,6 +102,7 @@ def scrape_page():
             print(f"Error processing job card: {e}")
             driver.back()
             time.sleep(5)
+
 
 # Scrape the current (first) page
 scrape_page()
@@ -117,12 +120,3 @@ for i, page_url in enumerate(pagination_links):
 
 # Close the driver
 driver.quit()
-
-# Print the collected data in a readable format
-print("Collected Job Data:")
-for job in all_data:
-    print(json.dumps(job, ensure_ascii=False, indent=4))
-
-# Optionally convert to DataFrame and print
-df = pd.DataFrame(all_data)
-print(df)
