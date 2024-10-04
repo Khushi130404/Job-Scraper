@@ -93,7 +93,6 @@ def scrape_page():
                 "Job Description": description,
             }
 
-            # Print the job data as it is scraped
             print(json.dumps(job_data, ensure_ascii=False, indent=4))
 
             driver.back()
@@ -104,11 +103,9 @@ def scrape_page():
             time.sleep(5)
 
 
-# Scrape the current (first) page
 scrape_page()
 print("Page 1 data collected")
 
-# Step 3: Iterate through pagination links and scrape subsequent pages
 for i, page_url in enumerate(pagination_links):
     try:
         driver.get(page_url)
@@ -118,5 +115,4 @@ for i, page_url in enumerate(pagination_links):
     except Exception as e:
         print(f"Error scraping page {i + 2}: {e}")
 
-# Close the driver
 driver.quit()
