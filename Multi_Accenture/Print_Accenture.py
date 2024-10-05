@@ -70,7 +70,7 @@ while page_counter < max_pages:
             "Job Description": desc,
             "Experience Required": experience
         }
-        all_data.append(job_data)
+        print(json.dumps(job_data, ensure_ascii=False, indent=4))
 
     print(f"Page {page_counter + 1} data collected")
 
