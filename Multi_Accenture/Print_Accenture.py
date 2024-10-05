@@ -62,7 +62,7 @@ while page_counter < max_pages:
     print(f"Descriptions: {job_descriptions_list}")
     print(f"Experiences: {experience_list}")
 
-    # Collect data for the current page
+
     for index, (title, location, desc, experience) in enumerate(zip(titles_list, locations_list, job_descriptions_list, experience_list), start=1):
         job_data = {
             "Job Title": title,
@@ -86,29 +86,4 @@ while page_counter < max_pages:
         print(f"Error during pagination: {e}")
         break
 
-# Close the driver
 driver.quit()
-
-# Save data to CSV only if data exists
-if all_data:
-    # Save data to CSV
-    csv_file = "accenture_job_data.csv"
-    keys = all_data[0].keys()
-    with open(csv_file, "w", newline="", encoding="utf-8") as output_file:
-        dict_writer = csv.DictWriter(output_file, fieldnames=keys)
-        dict_writer.writeheader()
-        dict_writer.writerows(all_data)
-
-    # Save data to Excel
-    excel_file = "accenture_job_data.xlsx"
-    df = pd.DataFrame(all_data)
-    df.to_excel(excel_file, index=False)
-
-    # Save data to JSON
-    json_file = "accenture_job_data.json"
-    with open(json_file, "w", encoding="utf-8") as json_output_file:
-        json.dump(all_data, json_output_file, ensure_ascii=False, indent=4)
-
-    print("Data saved to CSV, Excel, and JSON files.")
-else:
-    print("No data to save.")
