@@ -1,4 +1,4 @@
-# Scrapy settings for scraping_project project
+# Scrapy settings for accenture_scraper project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "scraping_project"
+BOT_NAME = "accenture_scraper"
 
-SPIDER_MODULES = ["scraping_project.spiders"]
-NEWSPIDER_MODULE = "scraping_project.spiders"
+SPIDER_MODULES = ["accenture_scraper.spiders"]
+NEWSPIDER_MODULE = "accenture_scraper.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "scraping_project (+http://www.yourdomain.com)"
+#USER_AGENT = "accenture_scraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "scraping_project.middlewares.ScrapingProjectSpiderMiddleware": 543,
+#    "accenture_scraper.middlewares.AccentureScraperSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "scraping_project.middlewares.ScrapingProjectDownloaderMiddleware": 543,
+#    "accenture_scraper.middlewares.AccentureScraperDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "scraping_project.pipelines.ScrapingProjectPipeline": 300,
+#    "accenture_scraper.pipelines.AccentureScraperPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -91,13 +91,3 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
-
-# Add Selenium middleware to Scrapy
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_selenium.SeleniumMiddleware': 800
-}
-
-# Set up Selenium
-SELENIUM_DRIVER_NAME = 'chrome'  # or 'firefox'
-SELENIUM_DRIVER_EXECUTABLE_PATH = '/path/to/chromedriver'  # Replace with your ChromeDriver or geckodriver path
-SELENIUM_DRIVER_ARGUMENTS = ['--headless']  # Run in headless mode (optional)
