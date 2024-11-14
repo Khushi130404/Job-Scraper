@@ -1,0 +1,434 @@
+[
+    {
+        "Job Title": "Data Engineer 5548771",
+        "Location": "Scottsdale, AZ",
+        "Job Description": "Data Eng, Mgmt & Governance Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Clinical Systems Delivery Consultant/Manager",
+        "Location": "Various locations",
+        "Job Description": "Mgmt Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Product Engineer",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP OTC Consultant - CMT Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP OTC Lead - CMT Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "GCP Data Engineer",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Callidus CPQ Technical Lead/Functional Lead",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Callidus CPQ Architect",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Cloud Contact Center Management Consulting Senior Principal",
+        "Location": "Various locations",
+        "Job Description": "Management Consulting ITL Senior Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Supply Chain and Operations Consulting Manager - Utilities Supply Chain",
+        "Location": "Various locations",
+        "Job Description": "Mgmt Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Device Test Engineer",
+        "Location": "Walnut Creek, CA",
+        "Job Description": "Product & Mfg. Test Engineering Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Azure Event Hub & Data Engineer  5489975",
+        "Location": "Various locations",
+        "Job Description": "Data Eng, Mgmt & Governance Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Accenture Programs Only - Technology Apprentice - Packaged Application Development Associate - Northeast - Hartford - NAELFY25",
+        "Location": "Hartford, CT",
+        "Job Description": "Packaged Application Development Associate",
+        "Experience Required": "Early Career"
+    },
+    {
+        "Job Title": "Workday Certified Financials AMS Integrations Consultant/Team Lead",
+        "Location": "Various locations",
+        "Job Description": "Business Architecture Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Delivery Lead - Energy Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Delivery Lead Associate Director",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Workplace Services Engineer - 5540311",
+        "Location": "Salt Lake City, UT",
+        "Job Description": "Application Technical Support Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Workplace Services Engineer - 5540306",
+        "Location": "Houston, TX",
+        "Job Description": "Application Technical Support Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Splunk Application Developer",
+        "Location": "Irving, TX",
+        "Job Description": "Advanced App/Cloud Support & Engineering Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Solution Architect Senior Manager",
+        "Location": "Arlington, VA",
+        "Job Description": "Solution Architecture Senior Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Ansible Application Developer/Solution Engineer- 5444417",
+        "Location": "Dallas, TX",
+        "Job Description": "Advanced App/Cloud Support & Engineering Senior Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Epic Resolute Professional Billing Certified Senior Analyst",
+        "Location": "Various locations",
+        "Job Description": "Packaged Application Development Senior Analyst",
+        "Experience Required": "Early Career"
+    },
+    {
+        "Job Title": "Technical Delivery Lead-5498032",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Business Analyst - 5317118",
+        "Location": "Various locations",
+        "Job Description": "Software Business Analysis Senior Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Full Stack Developer - Java & Angula JS -5505734",
+        "Location": "Atlanta, GA",
+        "Job Description": "Software Development Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Data Engineer 5548771",
+        "Location": "Scottsdale, AZ",
+        "Job Description": "Data Eng, Mgmt & Governance Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Clinical Systems Delivery Consultant/Manager",
+        "Location": "Various locations",
+        "Job Description": "Mgmt Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Product Engineer",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP OTC Consultant - CMT Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP OTC Lead - CMT Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "GCP Data Engineer",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Callidus CPQ Technical Lead/Functional Lead",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Callidus CPQ Architect",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Cloud Contact Center Management Consulting Senior Principal",
+        "Location": "Various locations",
+        "Job Description": "Management Consulting ITL Senior Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Supply Chain and Operations Consulting Manager - Utilities Supply Chain",
+        "Location": "Various locations",
+        "Job Description": "Mgmt Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Device Test Engineer",
+        "Location": "Walnut Creek, CA",
+        "Job Description": "Product & Mfg. Test Engineering Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Azure Event Hub & Data Engineer  5489975",
+        "Location": "Various locations",
+        "Job Description": "Data Eng, Mgmt & Governance Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Accenture Programs Only - Technology Apprentice - Packaged Application Development Associate - Northeast - Hartford - NAELFY25",
+        "Location": "Hartford, CT",
+        "Job Description": "Packaged Application Development Associate",
+        "Experience Required": "Early Career"
+    },
+    {
+        "Job Title": "Workday Certified Financials AMS Integrations Consultant/Team Lead",
+        "Location": "Various locations",
+        "Job Description": "Business Architecture Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Delivery Lead - Energy Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Delivery Lead Associate Director",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Workplace Services Engineer - 5540311",
+        "Location": "Salt Lake City, UT",
+        "Job Description": "Application Technical Support Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Workplace Services Engineer - 5540306",
+        "Location": "Houston, TX",
+        "Job Description": "Application Technical Support Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Splunk Application Developer",
+        "Location": "Irving, TX",
+        "Job Description": "Advanced App/Cloud Support & Engineering Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Solution Architect Senior Manager",
+        "Location": "Arlington, VA",
+        "Job Description": "Solution Architecture Senior Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Ansible Application Developer/Solution Engineer- 5444417",
+        "Location": "Dallas, TX",
+        "Job Description": "Advanced App/Cloud Support & Engineering Senior Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Epic Resolute Professional Billing Certified Senior Analyst",
+        "Location": "Various locations",
+        "Job Description": "Packaged Application Development Senior Analyst",
+        "Experience Required": "Early Career"
+    },
+    {
+        "Job Title": "Technical Delivery Lead-5498032",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Business Analyst - 5317118",
+        "Location": "Various locations",
+        "Job Description": "Software Business Analysis Senior Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Full Stack Developer - Java & Angula JS -5505734",
+        "Location": "Atlanta, GA",
+        "Job Description": "Software Development Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Data Engineer 5548771",
+        "Location": "Scottsdale, AZ",
+        "Job Description": "Data Eng, Mgmt & Governance Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Clinical Systems Delivery Consultant/Manager",
+        "Location": "Various locations",
+        "Job Description": "Mgmt Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Product Engineer",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP OTC Consultant - CMT Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP OTC Lead - CMT Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "GCP Data Engineer",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Callidus CPQ Technical Lead/Functional Lead",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Callidus CPQ Architect",
+        "Location": "Various locations",
+        "Job Description": "Technology Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Cloud Contact Center Management Consulting Senior Principal",
+        "Location": "Various locations",
+        "Job Description": "Management Consulting ITL Senior Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Supply Chain and Operations Consulting Manager - Utilities Supply Chain",
+        "Location": "Various locations",
+        "Job Description": "Mgmt Consulting Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Device Test Engineer",
+        "Location": "Walnut Creek, CA",
+        "Job Description": "Product & Mfg. Test Engineering Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Azure Event Hub & Data Engineer  5489975",
+        "Location": "Various locations",
+        "Job Description": "Data Eng, Mgmt & Governance Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Accenture Programs Only - Technology Apprentice - Packaged Application Development Associate - Northeast - Hartford - NAELFY25",
+        "Location": "Hartford, CT",
+        "Job Description": "Packaged Application Development Associate",
+        "Experience Required": "Early Career"
+    },
+    {
+        "Job Title": "Workday Certified Financials AMS Integrations Consultant/Team Lead",
+        "Location": "Various locations",
+        "Job Description": "Business Architecture Team Lead/Consultant",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "SAP Delivery Lead - Energy Industry",
+        "Location": "Various locations",
+        "Job Description": "Technology Delivery Lead Associate Director",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Workplace Services Engineer - 5540311",
+        "Location": "Salt Lake City, UT",
+        "Job Description": "Application Technical Support Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Workplace Services Engineer - 5540306",
+        "Location": "Houston, TX",
+        "Job Description": "Application Technical Support Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Splunk Application Developer",
+        "Location": "Irving, TX",
+        "Job Description": "Advanced App/Cloud Support & Engineering Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Solution Architect Senior Manager",
+        "Location": "Arlington, VA",
+        "Job Description": "Solution Architecture Senior Manager",
+        "Experience Required": "Senior Level"
+    },
+    {
+        "Job Title": "Ansible Application Developer/Solution Engineer- 5444417",
+        "Location": "Dallas, TX",
+        "Job Description": "Advanced App/Cloud Support & Engineering Senior Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Epic Resolute Professional Billing Certified Senior Analyst",
+        "Location": "Various locations",
+        "Job Description": "Packaged Application Development Senior Analyst",
+        "Experience Required": "Early Career"
+    },
+    {
+        "Job Title": "Technical Delivery Lead-5498032",
+        "Location": "Various locations",
+        "Job Description": "Technology Architecture Associate Manager",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Business Analyst - 5317118",
+        "Location": "Various locations",
+        "Job Description": "Software Business Analysis Senior Analyst",
+        "Experience Required": "Mid-Level"
+    },
+    {
+        "Job Title": "Full Stack Developer - Java & Angula JS -5505734",
+        "Location": "Atlanta, GA",
+        "Job Description": "Software Development Analyst",
+        "Experience Required": "Mid-Level"
+    }
+]
