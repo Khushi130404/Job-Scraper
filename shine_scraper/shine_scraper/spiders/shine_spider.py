@@ -5,6 +5,8 @@ class ShineSpider(scrapy.Spider):
     start_urls = [
         'https://www.shine.com/job-search/it-jobs/',
     ]
+    max_pages = 5  # Set the maximum number of pages to scrape
+    page_counter = 1  # Track the current page count
 
     def parse(self, response):
         job_listings = response.css('div.jobCard_jobCard__jjUmu')
@@ -12,7 +14,7 @@ class ShineSpider(scrapy.Spider):
         for job in job_listings:
             # Extract job details with corrected CSS selectors
             title = job.css('strong.jobCard_pReplaceH2__xWmHg p a::text').get(default='').strip()  # Title selector
-            link = job.css('strong.jobCard_pReplaceH2__xWmHg p a::attr(href)').get(default='').strip()  # Title selector
+            link = job.css('strong.jobCard_pReplaceH2__xWmHg p a::attr(href)').get(default='').strip()  # Job link selector
             company = job.css('div.jobCard_jobCard_cName__mYnow span::text').get(default='').strip()  # Company name selector
             location = ', '.join(job.css('div.jobCard_locationIcon__zrWt2::text').getall()).strip()  # Combined location selector
             description = job.css('div.jobCard_skillList__KKExE::text').get(default='').strip()  # Description selector
@@ -30,6 +32,9 @@ class ShineSpider(scrapy.Spider):
 
             yield job_item
 
-        next_page = response.css('li.next a::attr(href)').get()
-        if next_page:
-            yield response.follow(next_page, callback=self.parse)
+        # Pagination handling
+        if self.page_counter < self.max_pages:
+            next_page = response.css('div.jsrpcomponent_pagination__gBo0y a::attr(href)').getall()[-1]
+            if next_page:
+                self.page_counter += 1  # Increase page count
+                yield response.follow(next_page, callback=self.parse)
