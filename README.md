@@ -2,6 +2,7 @@
 
 A powerful job scraping tool that extracts job listings from multiple platforms using various web scraping techniques.  
 
+
 ## 📌 Features  
 
 - Scrapes job data from **LinkedIn, Glassdoor, Indeed, Shine, Freelancer, Accenture**  
@@ -12,7 +13,18 @@ A powerful job scraping tool that extracts job listings from multiple platforms 
   - **ChromeDriver** for headless browsing  
   - **ProxyMesh & Apify** for efficient scraping  
 - Parses and processes data using **BeautifulSoup, Selenium, and pandas**  
-- Exports data in **JSON, CSV, and XLSX** formats  
+- Exports data in **JSON, CSV, and XLSX** formats
+
+
+## 🌐 Site Scraped
+- Scrapes job data from **popular job portals**:  
+  - [LinkedIn](https://www.linkedin.com/)  
+  - [Glassdoor](https://www.glassdoor.com/)  
+  - [Indeed](https://www.indeed.com/)  
+  - [Shine](https://www.shine.com/)  
+  - [Freelancer](https://www.freelancer.com/)  
+  - [Accenture Careers](https://www.accenture.com/us-en/careers)  
+
 
 ## 🛠️ Tech Stack  
 
@@ -24,11 +36,13 @@ A powerful job scraping tool that extracts job listings from multiple platforms 
   - `pandas` – For data manipulation  
   - `ProxyMesh`, `Apify` – For handling proxies  
 
+
 ## 📂 Data Storage  
 
 - JSON (`.json`)  
 - CSV (`.csv`)  
 - Excel (`.xlsx`)  
+
 
 ## 🚀 How to Use  
 
